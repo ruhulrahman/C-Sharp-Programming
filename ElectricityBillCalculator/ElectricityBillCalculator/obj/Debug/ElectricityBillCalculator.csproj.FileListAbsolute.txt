@@ -1,0 +1,10 @@
+H:\C_Sharp\ElectricityBillCalculator\ElectricityBillCalculator\bin\Debug\ElectricityBillCalculator.exe.config
+H:\C_Sharp\ElectricityBillCalculator\ElectricityBillCalculator\bin\Debug\ElectricityBillCalculator.exe
+H:\C_Sharp\ElectricityBillCalculator\ElectricityBillCalculator\bin\Debug\ElectricityBillCalculator.pdb
+H:\C_Sharp\ElectricityBillCalculator\ElectricityBillCalculator\obj\Debug\ElectricityBillCalculator.csprojAssemblyReference.cache
+H:\C_Sharp\ElectricityBillCalculator\ElectricityBillCalculator\obj\Debug\ElectricityBillCalculator.Form1.resources
+H:\C_Sharp\ElectricityBillCalculator\ElectricityBillCalculator\obj\Debug\ElectricityBillCalculator.Properties.Resources.resources
+H:\C_Sharp\ElectricityBillCalculator\ElectricityBillCalculator\obj\Debug\ElectricityBillCalculator.csproj.GenerateResource.cache
+H:\C_Sharp\ElectricityBillCalculator\ElectricityBillCalculator\obj\Debug\ElectricityBillCalculator.csproj.CoreCompileInputs.cache
+H:\C_Sharp\ElectricityBillCalculator\ElectricityBillCalculator\obj\Debug\ElectricityBillCalculator.exe
+H:\C_Sharp\ElectricityBillCalculator\ElectricityBillCalculator\obj\Debug\ElectricityBillCalculator.pdb
