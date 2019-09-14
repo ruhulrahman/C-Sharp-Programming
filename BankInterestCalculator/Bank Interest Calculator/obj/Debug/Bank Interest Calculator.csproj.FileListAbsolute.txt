@@ -8,3 +8,13 @@ C:\Users\User\source\repos\Bank Interest Calculator\Bank Interest Calculator\bin
 C:\Users\User\source\repos\Bank Interest Calculator\Bank Interest Calculator\bin\Debug\Bank Interest Calculator.pdb
 C:\Users\User\source\repos\Bank Interest Calculator\Bank Interest Calculator\obj\Debug\Bank Interest Calculator.exe
 C:\Users\User\source\repos\Bank Interest Calculator\Bank Interest Calculator\obj\Debug\Bank Interest Calculator.pdb
+H:\C-Sharp-Programming\BankInterestCalculator\Bank Interest Calculator\bin\Debug\Bank Interest Calculator.exe.config
+H:\C-Sharp-Programming\BankInterestCalculator\Bank Interest Calculator\bin\Debug\Bank Interest Calculator.exe
+H:\C-Sharp-Programming\BankInterestCalculator\Bank Interest Calculator\bin\Debug\Bank Interest Calculator.pdb
+H:\C-Sharp-Programming\BankInterestCalculator\Bank Interest Calculator\obj\Debug\Bank Interest Calculator.csprojAssemblyReference.cache
+H:\C-Sharp-Programming\BankInterestCalculator\Bank Interest Calculator\obj\Debug\Bank_Interest_Calculator.Form1.resources
+H:\C-Sharp-Programming\BankInterestCalculator\Bank Interest Calculator\obj\Debug\Bank_Interest_Calculator.Properties.Resources.resources
+H:\C-Sharp-Programming\BankInterestCalculator\Bank Interest Calculator\obj\Debug\Bank Interest Calculator.csproj.GenerateResource.cache
+H:\C-Sharp-Programming\BankInterestCalculator\Bank Interest Calculator\obj\Debug\Bank Interest Calculator.csproj.CoreCompileInputs.cache
+H:\C-Sharp-Programming\BankInterestCalculator\Bank Interest Calculator\obj\Debug\Bank Interest Calculator.exe
+H:\C-Sharp-Programming\BankInterestCalculator\Bank Interest Calculator\obj\Debug\Bank Interest Calculator.pdb

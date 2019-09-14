@@ -14,7 +14,7 @@ namespace Bank_Interest_Calculator
     {
         private float year;
         private float balance, interestRate;
-        private float totalInterest;
+        private float totalInterest, totalInterestWithCapital, totalCycleInterest=0, totalCycleInterestWithCapital;
         private string bankList;
         public Form1()
         {
@@ -38,13 +38,30 @@ namespace Bank_Interest_Calculator
                 interestRate = percent(6);
             }
 
+
+
             totalInterest = balance * year * interestRate;
+            totalInterestWithCapital = balance + totalInterest;
+            totalInterestWithCapBox.Text = totalInterestWithCapital.ToString();
             output(totalInterest);
+
+            float CI;
+            float q = 1 + interestRate;
+            CI = (float) balance * (float) Math.Pow(q,year);
+            totalCycleInterest = CI - balance;
+
+            totalCycleInterestBox.Text = totalCycleInterest.ToString();
+            totalCycleInterestWIthCapBox.Text = CI.ToString();
+        }
+
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/Ruhul14.02");
         }
 
         private void output(float totalInterest)
         {
-            resultBox.Text = totalInterest.ToString();
+            interestBox.Text = totalInterest.ToString();
         }
 
         private float percent(float percentAmount)
