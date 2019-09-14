@@ -8,3 +8,13 @@ C:\Users\User\source\repos\Calculator\Calculator\obj\Debug\Calculator.csproj.Gen
 C:\Users\User\source\repos\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\Calculator\Calculator\obj\Debug\Calculator.exe
 C:\Users\User\source\repos\Calculator\Calculator\obj\Debug\Calculator.pdb
+H:\C-Sharp-Programming\Calculator\Calculator\bin\Debug\Calculator.exe.config
+H:\C-Sharp-Programming\Calculator\Calculator\bin\Debug\Calculator.exe
+H:\C-Sharp-Programming\Calculator\Calculator\bin\Debug\Calculator.pdb
+H:\C-Sharp-Programming\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+H:\C-Sharp-Programming\Calculator\Calculator\obj\Debug\Calculator.Form1.resources
+H:\C-Sharp-Programming\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+H:\C-Sharp-Programming\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+H:\C-Sharp-Programming\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+H:\C-Sharp-Programming\Calculator\Calculator\obj\Debug\Calculator.exe
+H:\C-Sharp-Programming\Calculator\Calculator\obj\Debug\Calculator.pdb
