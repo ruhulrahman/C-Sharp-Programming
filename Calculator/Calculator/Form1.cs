@@ -56,9 +56,10 @@ namespace Calculator
 
         private void ButtonPercent_Click(object sender, EventArgs e)
         {
-            total1 = double.Parse(resultBox.Text);
-            resultBox.Clear();
-            operation = "%";
+            total2 = double.Parse(resultBox.Text);
+            result = total1 * (total2 / 100);
+            resultBox.Text = result.ToString();
+            total1 = result;
         }
 
         private void ButtonRoot_Click(object sender, EventArgs e)
@@ -80,6 +81,11 @@ namespace Calculator
             result = double.Parse(resultBox.Text) / 4;
             resultBox.Text = result.ToString();
             total1 = result;
+        }
+
+        private void ResultBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void Button0_Click(object sender, EventArgs e)

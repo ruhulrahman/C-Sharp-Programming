@@ -70,6 +70,7 @@
             this.resultBox.TabIndex = 1;
             this.resultBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.resultBox.UseWaitCursor = true;
+            this.resultBox.TextChanged += new System.EventHandler(this.ResultBox_TextChanged);
             // 
             // buttonPercent
             // 
