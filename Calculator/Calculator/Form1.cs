@@ -88,6 +88,20 @@ namespace Calculator
 
         }
 
+        private void ButtonDel_Click(object sender, EventArgs e)
+        {
+            int txtlength = resultBox.Text.Length;
+            if (txtlength != 1)
+            {
+                resultBox.Text = resultBox.Text.Remove(txtlength - 1);
+            }
+            else
+            {
+                resultBox.Text = 0.ToString();
+            }
+            
+        }
+
         private void Button0_Click(object sender, EventArgs e)
         {
             resultBox.Text += button0.Text;
@@ -198,7 +212,7 @@ namespace Calculator
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
