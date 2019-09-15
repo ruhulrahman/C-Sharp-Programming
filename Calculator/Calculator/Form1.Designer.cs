@@ -82,17 +82,20 @@
             this.buttonPercent.TabIndex = 2;
             this.buttonPercent.Text = "%";
             this.buttonPercent.UseVisualStyleBackColor = false;
+            this.buttonPercent.Click += new System.EventHandler(this.ButtonPercent_Click);
             // 
             // buttonRoot
             // 
             this.buttonRoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonRoot.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRoot.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonRoot.Location = new System.Drawing.Point(65, 72);
             this.buttonRoot.Name = "buttonRoot";
             this.buttonRoot.Size = new System.Drawing.Size(59, 46);
             this.buttonRoot.TabIndex = 2;
-            this.buttonRoot.Text = "Root";
+            this.buttonRoot.Text = "√";
             this.buttonRoot.UseVisualStyleBackColor = false;
+            this.buttonRoot.Click += new System.EventHandler(this.ButtonRoot_Click);
             // 
             // buttonSquare
             // 
@@ -103,8 +106,9 @@
             this.buttonSquare.Name = "buttonSquare";
             this.buttonSquare.Size = new System.Drawing.Size(59, 46);
             this.buttonSquare.TabIndex = 2;
-            this.buttonSquare.Text = "x^2";
+            this.buttonSquare.Text = "x²";
             this.buttonSquare.UseVisualStyleBackColor = false;
+            this.buttonSquare.Click += new System.EventHandler(this.ButtonSquare_Click);
             // 
             // buttonOneForth
             // 
@@ -115,8 +119,9 @@
             this.buttonOneForth.Name = "buttonOneForth";
             this.buttonOneForth.Size = new System.Drawing.Size(59, 46);
             this.buttonOneForth.TabIndex = 2;
-            this.buttonOneForth.Text = "1/x";
+            this.buttonOneForth.Text = "¼";
             this.buttonOneForth.UseVisualStyleBackColor = false;
+            this.buttonOneForth.Click += new System.EventHandler(this.ButtonOneForth_Click);
             // 
             // buttonCE
             // 
@@ -165,8 +170,9 @@
             this.buttonDiv.Name = "buttonDiv";
             this.buttonDiv.Size = new System.Drawing.Size(59, 46);
             this.buttonDiv.TabIndex = 2;
-            this.buttonDiv.Text = "/";
+            this.buttonDiv.Text = "÷";
             this.buttonDiv.UseVisualStyleBackColor = false;
+            this.buttonDiv.Click += new System.EventHandler(this.ButtonDiv_Click);
             // 
             // button7
             // 
@@ -216,8 +222,9 @@
             this.buttonMul.Name = "buttonMul";
             this.buttonMul.Size = new System.Drawing.Size(59, 46);
             this.buttonMul.TabIndex = 2;
-            this.buttonMul.Text = "*";
+            this.buttonMul.Text = "×";
             this.buttonMul.UseVisualStyleBackColor = false;
+            this.buttonMul.Click += new System.EventHandler(this.ButtonMul_Click);
             // 
             // button4
             // 
@@ -332,7 +339,7 @@
             this.buttonPlusMinus.Name = "buttonPlusMinus";
             this.buttonPlusMinus.Size = new System.Drawing.Size(59, 46);
             this.buttonPlusMinus.TabIndex = 2;
-            this.buttonPlusMinus.Text = "+/-";
+            this.buttonPlusMinus.Text = "±";
             this.buttonPlusMinus.UseVisualStyleBackColor = false;
             this.buttonPlusMinus.Click += new System.EventHandler(this.ButtonPlusMinus_Click);
             // 
@@ -360,6 +367,7 @@
             this.buttonDot.TabIndex = 2;
             this.buttonDot.Text = ".";
             this.buttonDot.UseVisualStyleBackColor = false;
+            this.buttonDot.Click += new System.EventHandler(this.ButtonDot_Click);
             // 
             // buttonEaual
             // 
@@ -398,6 +406,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(253, 490);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);

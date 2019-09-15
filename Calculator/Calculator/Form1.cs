@@ -17,6 +17,7 @@ namespace Calculator
         private double firstNum, secondNum, result;
         private int Button1, Button2, Button3, Button4, Button5, Button6, Button7, Button8, Button9, Button0;
         private double total1 = 0, total2 = 0;
+        private string operation;
         private void Button8_Click(object sender, EventArgs e)
         {
             resultBox.Text += button8.Text;
@@ -29,9 +30,56 @@ namespace Calculator
 
         private void ButtonSub_Click(object sender, EventArgs e)
         {
-            total1 = total1 + double.Parse(resultBox.Text);
+            total1 = double.Parse(resultBox.Text);
             resultBox.Clear();
-            ButtonSub = true;
+            operation = "-";
+        }
+
+        private void ButtonMul_Click(object sender, EventArgs e)
+        {
+            total1 = double.Parse(resultBox.Text);
+            resultBox.Clear();
+            operation = "*";
+        }
+
+        private void ButtonDiv_Click(object sender, EventArgs e)
+        {
+            total1 = double.Parse(resultBox.Text);
+            resultBox.Clear();
+            operation = "/";
+        }
+
+        private void ButtonDot_Click(object sender, EventArgs e)
+        {
+            resultBox.Text += buttonDot.Text;
+        }
+
+        private void ButtonPercent_Click(object sender, EventArgs e)
+        {
+            total1 = double.Parse(resultBox.Text);
+            resultBox.Clear();
+            operation = "%";
+        }
+
+        private void ButtonRoot_Click(object sender, EventArgs e)
+        {
+            result = Math.Sqrt(double.Parse(resultBox.Text));
+            resultBox.Text = result.ToString();
+            total1 = result;
+        }
+
+        private void ButtonSquare_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(resultBox.Text) * double.Parse(resultBox.Text);
+            resultBox.Text = result.ToString();
+            total1 = result;
+        }
+
+        private void ButtonOneForth_Click(object sender, EventArgs e)
+        {
+            result = double.Parse(resultBox.Text) / 4;
+            resultBox.Text = result.ToString();
+            total1 = result;
         }
 
         private void Button0_Click(object sender, EventArgs e)
@@ -79,30 +127,44 @@ namespace Calculator
         {
 
         }
-
        
 
         private void Buttonadd_Click(object sender, EventArgs e)
         {
-            total1 = total1 + double.Parse(resultBox.Text);
+            total1 = double.Parse(resultBox.Text);
             resultBox.Clear();
-            Buttonadd = true;
+            operation = "+";
         }
 
         
-
         private void ButtonEaual_Click(object sender, EventArgs e)
         {
-            if (Buttonadd == true)
+            total2 = double.Parse(resultBox.Text);
+            if (operation == "+")
             {
-                total2 = total1 + double.Parse(resultBox.Text);
-                resultBox.Text = total2.ToString();
-                total1 = 0;
-            }else if (ButtonSub == true)
+                result = total1 + total2;
+                resultBox.Text = result.ToString();
+                total1 = result;
+            }else if (operation == "-")
             {
-                total2 = total1 - double.Parse(resultBox.Text);
-                resultBox.Text = total2.ToString();
-                total1 = 0;
+                result = total1 - total2;
+                resultBox.Text = result.ToString();
+                total1 = result;
+            }else if (operation == "*")
+            {
+                result = total1 * total2;
+                resultBox.Text = result.ToString();
+                total1 = result;
+            }else if (operation == "/")
+            {
+                result = total1 / total2;
+                resultBox.Text = result.ToString();
+                total1 = result;
+            }else if (operation == "%")
+            {
+                result = total1 % total2;
+                resultBox.Text = result.ToString();
+                total1 = result;
             }
             
         }
@@ -119,7 +181,7 @@ namespace Calculator
 
         private void Button7_Click(object sender, EventArgs e)
         {
-            resultBox.Text += button1.Text;
+            resultBox.Text += button7.Text;
         }
 
         public Form1()
