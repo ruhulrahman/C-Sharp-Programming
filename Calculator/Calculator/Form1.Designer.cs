@@ -55,6 +55,7 @@
             this.buttonEaual = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.inputMemoryBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // resultBox
@@ -63,10 +64,10 @@
             this.resultBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resultBox.Font = new System.Drawing.Font("Microsoft Tai Le", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resultBox.ForeColor = System.Drawing.SystemColors.Window;
-            this.resultBox.Location = new System.Drawing.Point(0, 0);
+            this.resultBox.Location = new System.Drawing.Point(0, 32);
             this.resultBox.Multiline = true;
             this.resultBox.Name = "resultBox";
-            this.resultBox.Size = new System.Drawing.Size(254, 66);
+            this.resultBox.Size = new System.Drawing.Size(254, 34);
             this.resultBox.TabIndex = 1;
             this.resultBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.resultBox.UseWaitCursor = true;
@@ -404,6 +405,21 @@
             this.linkLabel1.Text = "Ruhul";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel1_LinkClicked);
             // 
+            // inputMemoryBox
+            // 
+            this.inputMemoryBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputMemoryBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputMemoryBox.Font = new System.Drawing.Font("Microsoft Tai Le", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputMemoryBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.inputMemoryBox.Location = new System.Drawing.Point(0, 0);
+            this.inputMemoryBox.Multiline = true;
+            this.inputMemoryBox.Name = "inputMemoryBox";
+            this.inputMemoryBox.Size = new System.Drawing.Size(254, 34);
+            this.inputMemoryBox.TabIndex = 1;
+            this.inputMemoryBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.inputMemoryBox.UseWaitCursor = true;
+            this.inputMemoryBox.TextChanged += new System.EventHandler(this.ResultBox_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -436,6 +452,7 @@
             this.Controls.Add(this.button7);
             this.Controls.Add(this.buttonCE);
             this.Controls.Add(this.buttonPercent);
+            this.Controls.Add(this.inputMemoryBox);
             this.Controls.Add(this.resultBox);
             this.Name = "Form1";
             this.Text = "Calculator";
@@ -473,6 +490,7 @@
         private System.Windows.Forms.Button buttonEaual;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.TextBox inputMemoryBox;
     }
 }
 
