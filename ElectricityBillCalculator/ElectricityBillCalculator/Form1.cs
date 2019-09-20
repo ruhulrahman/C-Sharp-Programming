@@ -52,22 +52,30 @@ namespace ElectricityBillCalculator
                 peakTotalBill = peakHour * 0.053;
                 offPeakTotalBill = offPeakHour * 0.053;
 
-                if(peakTotalBill < 10)
+                if (peakHourBox.Text == "")
+                {
+                    peakTotalBill = 0.0;
+                }
+                else if(peakTotalBill >= 1 && peakTotalBill <= 10)
                 {
                     peakTotalBill = 10.0;
                 }
                 else
                 {
-                    peakTotalBill = peakTotalBill;
+                    peakTotalBill = peakHour * 0.053;
                 }
 
-                if(offPeakTotalBill < 10)
+                if (offPeakHourBox.Text == "")
+                {
+                    offPeakTotalBill = 0.0;
+                }
+                else if (offPeakTotalBill < 10)
                 {
                     offPeakTotalBill = 10.0;
                 }
                 else
                 {
-                    offPeakTotalBill = offPeakTotalBill;
+                    offPeakTotalBill = offPeakHour * 0.053;
                 }
 
                 result = peakTotalBill + offPeakTotalBill;
@@ -76,7 +84,11 @@ namespace ElectricityBillCalculator
 
             }else if(radioButtonCommercial.Checked == true)
             {
-                if (peakHour <= 800)
+                if (peakHourBox.Text == "")
+                {
+                    peakTotalBill = 0.0;
+                }
+                else if (peakHour <= 800)
                 {
                     peakTotalBill = 50;
                 }
@@ -87,7 +99,11 @@ namespace ElectricityBillCalculator
                     peakTotalBill = 50 + Convert.ToSingle(extraBill);
                 }
 
-                if (offPeakHour <= 800)
+                if (offPeakHourBox.Text == "")
+                {
+                    offPeakTotalBill = 0.0;
+                }
+                else if (offPeakHour <= 800)
                 {
                     offPeakTotalBill = 50;
                 }
@@ -105,9 +121,13 @@ namespace ElectricityBillCalculator
             }
             else if(radioButtonIndustrial.Checked == true)
             {
-                
 
-                if (peakHour <= 800)
+
+                if (peakHourBox.Text == "")
+                {
+                    peakTotalBill = 0.0;
+                }
+                else if (peakHour <= 800)
                 {
                     peakTotalBill = 70.0;
                 }
@@ -118,7 +138,11 @@ namespace ElectricityBillCalculator
                     peakTotalBill = 70 + Convert.ToSingle(extraBill);
                 }
 
-                if (offPeakHour <= 800)
+                if (offPeakHourBox.Text == "")
+                {
+                    offPeakTotalBill = 0.0;
+                }
+                else if (offPeakHour <= 800)
                 {
                     offPeakTotalBill = 35.0;
                 }
