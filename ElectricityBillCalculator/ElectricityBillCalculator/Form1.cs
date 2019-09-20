@@ -13,7 +13,7 @@ namespace ElectricityBillCalculator
     public partial class Form1 : Form
     {
         private Boolean residential, commercial, industrial;
-        private float peakHour, offPeakHour, result;
+        private double peakHour, offPeakHour, result, peakTotalBill, offPeakTotalBill;
         public Form1()
         {
             InitializeComponent();
@@ -26,55 +26,107 @@ namespace ElectricityBillCalculator
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            input();
 
-            if(radioButtonResident.Checked == true)
+            if (peakHourBox.Text == "")
             {
-                result = peakHour * 10;
+                peakHour = 0.0;
+            }
+            else
+            {
+                peakHour = double.Parse(peakHourBox.Text);
+            }
+
+
+            if (offPeakHourBox.Text == "")
+            {
+                offPeakHour = 0.0;
+            }
+            else
+            {
+                offPeakHour = double.Parse(offPeakHourBox.Text);
+            }
+
+
+            if (radioButtonResident.Checked == true)
+            {
+                peakTotalBill = peakHour * 0.053;
+                offPeakTotalBill = offPeakHour * 0.053;
+
+                if(peakTotalBill < 10)
+                {
+                    peakTotalBill = 10.0;
+                }
+                else
+                {
+                    peakTotalBill = peakTotalBill;
+                }
+
+                if(offPeakTotalBill < 10)
+                {
+                    offPeakTotalBill = 10.0;
+                }
+                else
+                {
+                    offPeakTotalBill = offPeakTotalBill;
+                }
+
+                result = peakTotalBill + offPeakTotalBill;
+
                 output(result);
+
             }else if(radioButtonCommercial.Checked == true)
             {
                 if (peakHour <= 800)
                 {
-                    result = peakHour * 50;
-                    output(result);
+                    peakTotalBill = 50;
                 }
                 else
                 {
-                    result = peakHour * 50;
-                    float extraHour = peakHour - 800;
-                    double extraBill = extraHour * 70.042;
-                    result = result + Convert.ToSingle(extraBill);
-                    output(result);
-                }
-                
-            }else if(radioButtonIndustrial.Checked == true)
-            {
-                float peakTotalBill, offPeakTotalBill;
-
-                if (peakHour <= 800)
-                {
-                    peakTotalBill = peakHour * 70;
-                    output(result);
-                }
-                else
-                {
-                    result = peakHour * 70;
-                    float extraHour = peakHour - 800;
-                    double extraBill = extraHour * 70.062;
-                    peakTotalBill = result + Convert.ToSingle(extraBill);
+                    double extraHour = peakHour - 800;
+                    double extraBill = extraHour * 0.042;
+                    peakTotalBill = 50 + Convert.ToSingle(extraBill);
                 }
 
                 if (offPeakHour <= 800)
                 {
-                    offPeakTotalBill = offPeakHour * 35;
+                    offPeakTotalBill = 50;
                 }
                 else
                 {
-                    result = peakHour * 35;
-                    float extraHour = peakHour - 800;
-                    double extraBill = extraHour * 35.025;
-                    offPeakTotalBill = result + Convert.ToSingle(extraBill);
+                    double extraHour = peakHour - 800;
+                    double extraBill = extraHour * 0.042;
+                    peakTotalBill = 50 + Convert.ToSingle(extraBill);
+                }
+
+                result = peakTotalBill + offPeakTotalBill;
+
+                output(result);
+
+            }
+            else if(radioButtonIndustrial.Checked == true)
+            {
+                
+
+                if (peakHour <= 800)
+                {
+                    peakTotalBill = 70.0;
+                }
+                else
+                {
+                    double extraHour = peakHour - 800;
+                    double extraBill = extraHour * 0.062;
+                    peakTotalBill = 70 + Convert.ToSingle(extraBill);
+                }
+
+                if (offPeakHour <= 800)
+                {
+                    offPeakTotalBill = 35.0;
+                }
+                else
+                {
+                    double extraHour = peakHour - 800;
+                    double extraBill = extraHour * 0.025;
+                    offPeakTotalBill = 35 + Convert.ToSingle(extraBill);
                 }
 
                 result = peakTotalBill + offPeakTotalBill;
@@ -84,12 +136,7 @@ namespace ElectricityBillCalculator
             }
         }
 
-        private void input()
-        {
-            peakHour = float.Parse(peakHourBox.Text);
-            offPeakHour = float.Parse(offPeakHourBox.Text);
-        }
-        private void output(float result)
+        private void output(double result)
         {
             resultBox.Text = result.ToString();
         }

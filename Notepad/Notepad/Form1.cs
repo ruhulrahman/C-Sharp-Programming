@@ -16,5 +16,10 @@ namespace Notepad
         {
             InitializeComponent();
         }
+
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e) {
+
+            Close();
+        }
     }
 }
