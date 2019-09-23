@@ -8,3 +8,14 @@ H:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.csproj.GenerateResource
 H:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.csproj.CoreCompileInputs.cache
 H:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.exe
 H:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.pdb
+E:\C-Sharp-Programming\Notepad\Notepad\bin\Debug\Notepad.exe.config
+E:\C-Sharp-Programming\Notepad\Notepad\bin\Debug\Notepad.exe
+E:\C-Sharp-Programming\Notepad\Notepad\bin\Debug\Notepad.pdb
+E:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.csprojAssemblyReference.cache
+E:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.Form1.resources
+E:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.Form2.resources
+E:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.Properties.Resources.resources
+E:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.csproj.GenerateResource.cache
+E:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.csproj.CoreCompileInputs.cache
+E:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.exe
+E:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.pdb
