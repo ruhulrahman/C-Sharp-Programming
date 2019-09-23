@@ -48,5 +48,16 @@ namespace Notepad
         {
             mainTextBox.SelectedText = "";
         }
+
+        private void AddInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+        }
+
+        private void MainTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

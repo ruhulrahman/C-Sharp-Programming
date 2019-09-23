@@ -19,3 +19,5 @@ E:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.csproj.GenerateResource
 E:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.csproj.CoreCompileInputs.cache
 E:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.exe
 E:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.pdb
+E:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.Form3.resources
+E:\C-Sharp-Programming\Notepad\Notepad\obj\Debug\Notepad.Form4.resources
