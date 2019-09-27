@@ -111,7 +111,7 @@ namespace ElectricityBillCalculator
                 {
                     double extraHour = peakHour - 800;
                     double extraBill = extraHour * 0.042;
-                    peakTotalBill = 50 + Convert.ToSingle(extraBill);
+                    offPeakTotalBill = 50 + Convert.ToSingle(extraBill);
                 }
 
                 result = peakTotalBill + offPeakTotalBill;
