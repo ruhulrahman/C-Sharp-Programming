@@ -12,6 +12,7 @@ namespace Calculator
 {
     public partial class Form1 : Form
     {
+        
         private Boolean ButtonEaual, Buttonadd, ButtonSub, ButtonMul, ButtonDiv;
         private Boolean ButtonPlusMinus;
         private double firstNum, secondNum, result;

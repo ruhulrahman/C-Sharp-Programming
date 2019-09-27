@@ -28,3 +28,6 @@ E:\C-Sharp-Programming\Calculator\Calculator\obj\Debug\Calculator.csproj.Generat
 E:\C-Sharp-Programming\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
 E:\C-Sharp-Programming\Calculator\Calculator\obj\Debug\Calculator.exe
 E:\C-Sharp-Programming\Calculator\Calculator\obj\Debug\Calculator.pdb
+F:\Ruhul\C-Sharp-Programming\Calculator\Calculator\bin\Debug\Calculator.exe.config
+F:\Ruhul\C-Sharp-Programming\Calculator\Calculator\obj\Debug\Calculator.exe
+F:\Ruhul\C-Sharp-Programming\Calculator\Calculator\obj\Debug\Calculator.pdb

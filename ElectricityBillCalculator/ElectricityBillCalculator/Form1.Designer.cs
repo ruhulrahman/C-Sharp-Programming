@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButtonResident = new System.Windows.Forms.RadioButton();
-            this.radioButtonIndustrial = new System.Windows.Forms.RadioButton();
             this.radioButtonCommercial = new System.Windows.Forms.RadioButton();
+            this.radioButtonIndustrial = new System.Windows.Forms.RadioButton();
+            this.radioButtonResident = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.peakHourBox = new System.Windows.Forms.TextBox();
-            this.offPeakHourBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.offPeakHourBox = new System.Windows.Forms.TextBox();
+            this.peakHourBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.resultBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -57,16 +57,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Connection Type";
             // 
-            // radioButtonResident
+            // radioButtonCommercial
             // 
-            this.radioButtonResident.AutoSize = true;
-            this.radioButtonResident.Location = new System.Drawing.Point(24, 31);
-            this.radioButtonResident.Name = "radioButtonResident";
-            this.radioButtonResident.Size = new System.Drawing.Size(77, 17);
-            this.radioButtonResident.TabIndex = 0;
-            this.radioButtonResident.TabStop = true;
-            this.radioButtonResident.Text = "Residential";
-            this.radioButtonResident.UseVisualStyleBackColor = true;
+            this.radioButtonCommercial.AutoSize = true;
+            this.radioButtonCommercial.Location = new System.Drawing.Point(24, 68);
+            this.radioButtonCommercial.Name = "radioButtonCommercial";
+            this.radioButtonCommercial.Size = new System.Drawing.Size(79, 17);
+            this.radioButtonCommercial.TabIndex = 2;
+            this.radioButtonCommercial.TabStop = true;
+            this.radioButtonCommercial.Text = "Commercial";
+            this.radioButtonCommercial.UseVisualStyleBackColor = true;
             // 
             // radioButtonIndustrial
             // 
@@ -79,16 +79,16 @@
             this.radioButtonIndustrial.Text = "Industrial";
             this.radioButtonIndustrial.UseVisualStyleBackColor = true;
             // 
-            // radioButtonCommercial
+            // radioButtonResident
             // 
-            this.radioButtonCommercial.AutoSize = true;
-            this.radioButtonCommercial.Location = new System.Drawing.Point(24, 68);
-            this.radioButtonCommercial.Name = "radioButtonCommercial";
-            this.radioButtonCommercial.Size = new System.Drawing.Size(79, 17);
-            this.radioButtonCommercial.TabIndex = 2;
-            this.radioButtonCommercial.TabStop = true;
-            this.radioButtonCommercial.Text = "Commercial";
-            this.radioButtonCommercial.UseVisualStyleBackColor = true;
+            this.radioButtonResident.AutoSize = true;
+            this.radioButtonResident.Location = new System.Drawing.Point(24, 31);
+            this.radioButtonResident.Name = "radioButtonResident";
+            this.radioButtonResident.Size = new System.Drawing.Size(77, 17);
+            this.radioButtonResident.TabIndex = 0;
+            this.radioButtonResident.TabStop = true;
+            this.radioButtonResident.Text = "Residential";
+            this.radioButtonResident.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -104,19 +104,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "KWH Used";
             // 
-            // peakHourBox
+            // label2
             // 
-            this.peakHourBox.Location = new System.Drawing.Point(90, 46);
-            this.peakHourBox.Name = "peakHourBox";
-            this.peakHourBox.Size = new System.Drawing.Size(100, 20);
-            this.peakHourBox.TabIndex = 0;
-            // 
-            // offPeakHourBox
-            // 
-            this.offPeakHourBox.Location = new System.Drawing.Point(90, 91);
-            this.offPeakHourBox.Name = "offPeakHourBox";
-            this.offPeakHourBox.Size = new System.Drawing.Size(100, 20);
-            this.offPeakHourBox.TabIndex = 1;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 94);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Off Peak Hour";
             // 
             // label1
             // 
@@ -127,14 +122,19 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Peak Hour";
             // 
-            // label2
+            // offPeakHourBox
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 94);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Off Peak Hour";
+            this.offPeakHourBox.Location = new System.Drawing.Point(90, 91);
+            this.offPeakHourBox.Name = "offPeakHourBox";
+            this.offPeakHourBox.Size = new System.Drawing.Size(100, 20);
+            this.offPeakHourBox.TabIndex = 1;
+            // 
+            // peakHourBox
+            // 
+            this.peakHourBox.Location = new System.Drawing.Point(90, 46);
+            this.peakHourBox.Name = "peakHourBox";
+            this.peakHourBox.Size = new System.Drawing.Size(100, 20);
+            this.peakHourBox.TabIndex = 0;
             // 
             // label3
             // 
