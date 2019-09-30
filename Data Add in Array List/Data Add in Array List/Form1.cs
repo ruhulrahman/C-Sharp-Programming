@@ -54,5 +54,24 @@ namespace Data_Add_in_Array_List
                 listItemBox.Items.Remove(item);
             }
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            if(listItemBox.SelectedItems.Count != 0)
+            {
+                while (listItemBox.SelectedIndex != -1)
+                {
+                    listItemBox.Items.RemoveAt(listItemBox.SelectedIndex);
+                }
+            }
+
+            foreach (string item in itemName)
+            {
+                itemName.Remove(listItemBox.SelectedItem);
+            }
+
+            //itemName.Remove(listItemBox.SelectedItem);
+
+        }
     }
 }
