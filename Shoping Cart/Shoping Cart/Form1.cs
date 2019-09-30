@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace Shoping_Cart
 {
     public partial class Form1 : Form
     {
+        ArrayList itemsList = new ArrayList();
         public Form1()
         {
             InitializeComponent();
@@ -47,6 +49,32 @@ namespace Shoping_Cart
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+        }
+
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://facebook.com/Ruhul14.02");
+        }
+
+        private void AddItemBtn_Click(object sender, EventArgs e)
+        {
+            itemsList.Add(productNameBox.Text);
+            itemsList.Add(priceBox.Text);
+            itemsList.Add(quantityBox.Text);
+
+            ShowData();
+
+            productNameBox.Clear();
+            priceBox.Clear();
+            quantityBox.Clear();
+        }
+
+        private void ShowData()
+        {
+            foreach (string item in itemsList)
+            {
+                //listItemBox.Items.Add(item);
+            }
         }
     }
 }
