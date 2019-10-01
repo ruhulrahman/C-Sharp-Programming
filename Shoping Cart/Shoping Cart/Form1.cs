@@ -74,7 +74,8 @@ namespace Shoping_Cart
             //priceList.Add(priceBox.Text);
             //quantityList.Add(quantityBox.Text);
             Product products = new Product(productNameBox.Text, int.Parse(priceBox.Text), int.Parse(quantityBox.Text));
-            productNameList.Add(products);
+            //productNameList.Add(products);
+            dataGridView1.Rows.Add(products);
             ShowData();
 
             productNameBox.Clear();
@@ -85,8 +86,16 @@ namespace Shoping_Cart
         private void ShowData()
         {
             int i = 0;
+            int n = 0;
+
             foreach (string item in productNameList)
             {
+                n = dataGridView1.Rows.Add();
+                dataGridView1.Rows[n].Cells[0].Value = i++;
+                dataGridView1.Rows[n].Cells[1].Value = "Rice";
+                dataGridView1.Rows[n].Cells[2].Value = "50";
+                dataGridView1.Rows[n].Cells[3].Value = "3";
+                dataGridView1.Rows[n].Cells[4].Value = "150";
                 //listItemBox.Items.Add(item);
                 dataGridView1.Rows.Add(i++, item, priceList, quantityList);
             }
