@@ -16,6 +16,10 @@ namespace Shoping_Cart
         ArrayList productNameList = new ArrayList();
         ArrayList priceList = new ArrayList();
         ArrayList quantityList = new ArrayList();
+
+        
+
+
         public Form1()
         {
             InitializeComponent();
@@ -70,6 +74,14 @@ namespace Shoping_Cart
 
         private void AddItemBtn_Click(object sender, EventArgs e)
         {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("product", typeof(string));
+            dt.Columns.Add("price", typeof(int));
+            dt.Columns.Add("quantity", typeof(int));
+
+            dt.Rows.Add(productNameBox.Text, int.Parse(priceBox.Text), int.Parse(quantityBox.Text));
+
+
             //productNameList.Add(productNameBox.Text);
             //priceList.Add(priceBox.Text);
             //quantityList.Add(quantityBox.Text);
@@ -87,6 +99,7 @@ namespace Shoping_Cart
         {
             int i = 0;
             int n = 0;
+
 
             foreach (string item in productNameList)
             {
