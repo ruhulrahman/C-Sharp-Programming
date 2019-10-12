@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Shoping_Cart
 {
     class Product
     {
-        private string productName;
-        private int price;
-        private int quantity;
+        string productName;
+        int price;
+        int quantity;
 
         public Product()
         {
@@ -19,10 +15,13 @@ namespace Shoping_Cart
 
         public Product(string productName, int price, int quantity)
         {
-            this.productName = productName;
-            this.price = price;
-            this.quantity = quantity;
+            ProductName = productName ?? throw new ArgumentNullException(nameof(productName));
+            Price = price;
+            Quantity = quantity;
         }
 
+        public string ProductName { get => productName; set => productName = value; }
+        public int Price { get => price; set => price = value; }
+        public int Quantity { get => quantity; set => quantity = value; }
     }
 }

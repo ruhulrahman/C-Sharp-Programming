@@ -13,9 +13,9 @@ namespace Shoping_Cart
 {
     public partial class Form1 : Form
     {
-        ArrayList productNameList = new ArrayList();
-        ArrayList priceList = new ArrayList();
-        ArrayList quantityList = new ArrayList();
+        ArrayList alproduct = new ArrayList();
+
+        //private Product product = new Product();
 
         
 
@@ -28,30 +28,21 @@ namespace Shoping_Cart
         private void Form1_Load(object sender, EventArgs e)
         {
             int n = 0;
-            for(int i=0; i<3; i++)
-            {
-                n = dataGridView1.Rows.Add();
-                dataGridView1.Rows[n].Cells[0].Value = "1";
-                dataGridView1.Rows[n].Cells[1].Value = "Rice";
-                dataGridView1.Rows[n].Cells[2].Value = "50";
-                dataGridView1.Rows[n].Cells[3].Value = "3";
-                dataGridView1.Rows[n].Cells[4].Value = "150";
-                n = dataGridView1.Rows.Add();
-                dataGridView1.Rows[n].Cells[0].Value = "2";
-                dataGridView1.Rows[n].Cells[1].Value = "Dal";
-                dataGridView1.Rows[n].Cells[2].Value = "100";
-                dataGridView1.Rows[n].Cells[3].Value = "2";
-                dataGridView1.Rows[n].Cells[4].Value = "200";
-            }
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    n = dataGridView1.Rows.Add();
+            //    dataGridView1.Rows[n].Cells[0].Value = i;
+            //    dataGridView1.Rows[n].Cells[1].Value = "Rice";
+            //    dataGridView1.Rows[n].Cells[2].Value = "50";
+            //    dataGridView1.Rows[n].Cells[3].Value = "3";
+            //    dataGridView1.Rows[n].Cells[4].Value = "150";
+            //}
 
-            dataGridView1.Rows[n].Cells[0].Value = "";
-            dataGridView1.Rows[n].Cells[1].Value = "";
-            dataGridView1.Rows[n].Cells[2].Value = "";
-            dataGridView1.Rows[n].Cells[3].Value = "Total Cost: ";
-            dataGridView1.Rows[n].Cells[4].Value = "450";
+            //n = dataGridView1.Rows.Add();
 
-            dataGridView1.Rows[n].DefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
-            dataGridView1.Rows[n].DefaultCellStyle.ForeColor = Color.White;
+
+            //dataGridView1.Rows[n].DefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            //dataGridView1.Rows[n].DefaultCellStyle.ForeColor = Color.White;
             
 
             dataGridView1.BorderStyle = BorderStyle.None;
@@ -74,20 +65,14 @@ namespace Shoping_Cart
 
         private void AddItemBtn_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            dt.Columns.Add("product", typeof(string));
-            dt.Columns.Add("price", typeof(int));
-            dt.Columns.Add("quantity", typeof(int));
 
-            dt.Rows.Add(productNameBox.Text, int.Parse(priceBox.Text), int.Parse(quantityBox.Text));
+            string proName = productNameBox.Text;
+            int price = int.Parse(priceBox.Text);
+            int qty = int.Parse(quantityBox.Text);
+
+            alproduct.Add(new Product(proName, price, qty));           
 
 
-            //productNameList.Add(productNameBox.Text);
-            //priceList.Add(priceBox.Text);
-            //quantityList.Add(quantityBox.Text);
-            Product products = new Product(productNameBox.Text, int.Parse(priceBox.Text), int.Parse(quantityBox.Text));
-            //productNameList.Add(products);
-            dataGridView1.Rows.Add(products);
             ShowData();
 
             productNameBox.Clear();
@@ -95,23 +80,33 @@ namespace Shoping_Cart
             quantityBox.Clear();
         }
 
+
         private void ShowData()
         {
-            int i = 0;
+            int i = 1;
             int n = 0;
+            int sum = 0;
 
+            n = dataGridView1.Rows.Add();
+            dataGridView1.Rows[n].Cells[0].Value = "";
+            dataGridView1.Rows[n].Cells[1].Value = "";
+            dataGridView1.Rows[n].Cells[2].Value = "";
+            dataGridView1.Rows[n].Cells[3].Value = "Total Cost: ";
+            dataGridView1.Rows[n].Cells[4].Value = sum;
 
-            foreach (string item in productNameList)
+            foreach (Product item in alproduct)
             {
-                n = dataGridView1.Rows.Add();
+                
                 dataGridView1.Rows[n].Cells[0].Value = i++;
-                dataGridView1.Rows[n].Cells[1].Value = "Rice";
-                dataGridView1.Rows[n].Cells[2].Value = "50";
-                dataGridView1.Rows[n].Cells[3].Value = "3";
-                dataGridView1.Rows[n].Cells[4].Value = "150";
-                //listItemBox.Items.Add(item);
-                dataGridView1.Rows.Add(i++, item, priceList, quantityList);
+                dataGridView1.Rows[n].Cells[1].Value = item.ProductName;
+                dataGridView1.Rows[n].Cells[2].Value = item.Price;
+                dataGridView1.Rows[n].Cells[3].Value = item.Quantity;
+                dataGridView1.Rows[n].Cells[4].Value = item.Price * item.Quantity;
+                sum += item.Price * item.Quantity;
             }
+
+
+            
         }
     }
 }
