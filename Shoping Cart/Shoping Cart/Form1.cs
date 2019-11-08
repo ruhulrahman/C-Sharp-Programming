@@ -17,7 +17,7 @@ namespace Shoping_Cart
 
         //private Product product = new Product();
 
-        
+        int sum = 0;
 
 
         public Form1()
@@ -26,24 +26,10 @@ namespace Shoping_Cart
         }
         
         private void Form1_Load(object sender, EventArgs e)
-        {
-            //int n = 0;
-            //for (int i = 0; i < 3; i++)
-            //{
-            //    n = dataGridView1.Rows.Add();
-            //    dataGridView1.Rows[n].Cells[0].Value = i;
-            //    dataGridView1.Rows[n].Cells[1].Value = "Rice";
-            //    dataGridView1.Rows[n].Cells[2].Value = "50";
-            //    dataGridView1.Rows[n].Cells[3].Value = "3";
-            //    dataGridView1.Rows[n].Cells[4].Value = "150";
-            //}
-
-            //n = dataGridView1.Rows.Add();
-
-
-            //dataGridView1.Rows[n].DefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
-            //dataGridView1.Rows[n].DefaultCellStyle.ForeColor = Color.White;
+        {            
             
+            //dataGridView1.Rows[n].DefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            //dataGridView1.Rows[n].DefaultCellStyle.ForeColor = Color.White;            
 
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
@@ -73,13 +59,16 @@ namespace Shoping_Cart
             string proName = productNameBox.Text;
             int price = Convert.ToInt32(priceBox.Text);
             int qty = int.Parse(quantityBox.Text);
+            sum = 0;
             alproduct.Add(new Product(proName, price, qty));
+
                         
             ShowData();
             
             productNameBox.Clear();
             priceBox.Clear();
             quantityBox.Clear();
+
         }
 
 
@@ -87,10 +76,10 @@ namespace Shoping_Cart
         {
             int i = 1;
             int n;
-            int sum = 0;
-            int vat, totalWithoutVat;
-
             
+            int vat, totalWithoutVat;
+            
+
 
             n = dataGridView1.Rows.Add();
             
@@ -98,30 +87,34 @@ namespace Shoping_Cart
             {
                 
                 foreach (Product item in alproduct)
-                {
-                    
+                {                    
                     dataGridView1.Rows[n].Cells[0].Value = i++;
                     dataGridView1.Rows[n].Cells[1].Value = item.ProductName;
                     dataGridView1.Rows[n].Cells[2].Value = item.Price;
                     dataGridView1.Rows[n].Cells[3].Value = item.Quantity;
                     dataGridView1.Rows[n].Cells[4].Value = item.Price * item.Quantity;
-                    sum += item.Price * item.Quantity;
-                    
+
+                    sum = sum + item.Price * item.Quantity;
                 }
-                n = dataGridView1.Rows.Add();
-                dataGridView1.Rows[n].Cells[0].Value = "";
-                dataGridView1.Rows[n].Cells[1].Value = "";
-                dataGridView1.Rows[n].Cells[2].Value = "";
-                dataGridView1.Rows[n].Cells[3].Value = "Total Cost: ";
-                dataGridView1.Rows[n].Cells[4].Value = sum;
             }
 
-            
 
 
 
 
 
+        }
+
+        private void ShowTotalItemCost_Click(object sender, EventArgs e)
+        {
+            int n;
+
+            n = dataGridView1.Rows.Add();
+            dataGridView1.Rows[n].Cells[0].Value = "";
+            dataGridView1.Rows[n].Cells[1].Value = "";
+            dataGridView1.Rows[n].Cells[2].Value = "";
+            dataGridView1.Rows[n].Cells[3].Value = "Total Cost: ";
+            dataGridView1.Rows[n].Cells[4].Value = sum;
         }
     }
 }
