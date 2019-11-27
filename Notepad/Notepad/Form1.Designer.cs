@@ -89,18 +89,33 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+<<<<<<< HEAD
+=======
+            this.newToolStripMenuItem.ShortcutKeyDisplayString = "CTL+N";
+            this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+>>>>>>> eb1f1c622c16aa9fed44fbb67e0f359fa2298b87
             this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newToolStripMenuItem.Text = "New";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+<<<<<<< HEAD
+=======
+            this.openToolStripMenuItem.ShortcutKeyDisplayString = "CLT+O";
+            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+>>>>>>> eb1f1c622c16aa9fed44fbb67e0f359fa2298b87
             this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+<<<<<<< HEAD
+=======
+            this.saveToolStripMenuItem.ShortcutKeyDisplayString = "CTL+S";
+            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+>>>>>>> eb1f1c622c16aa9fed44fbb67e0f359fa2298b87
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.SaveToolStripMenuItem_Click);
@@ -155,18 +170,33 @@
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+<<<<<<< HEAD
+=======
+            this.undoToolStripMenuItem.ShortcutKeyDisplayString = "CTL+Z";
+            this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+>>>>>>> eb1f1c622c16aa9fed44fbb67e0f359fa2298b87
             this.undoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.undoToolStripMenuItem.Text = "Undo";
             // 
             // cutToolStripMenuItem
             // 
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
+<<<<<<< HEAD
+=======
+            this.cutToolStripMenuItem.ShortcutKeyDisplayString = "CTL+X";
+            this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+>>>>>>> eb1f1c622c16aa9fed44fbb67e0f359fa2298b87
             this.cutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cutToolStripMenuItem.Text = "Cut";
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+<<<<<<< HEAD
+=======
+            this.copyToolStripMenuItem.ShortcutKeyDisplayString = "CTL+C";
+            this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+>>>>>>> eb1f1c622c16aa9fed44fbb67e0f359fa2298b87
             this.copyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.copyToolStripMenuItem.Text = "Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.CopyToolStripMenuItem_Click);
@@ -174,6 +204,11 @@
             // pasteToolStripMenuItem
             // 
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
+<<<<<<< HEAD
+=======
+            this.pasteToolStripMenuItem.ShortcutKeyDisplayString = "CTL+V";
+            this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
+>>>>>>> eb1f1c622c16aa9fed44fbb67e0f359fa2298b87
             this.pasteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pasteToolStripMenuItem.Text = "Paste";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(this.PasteToolStripMenuItem_Click);
