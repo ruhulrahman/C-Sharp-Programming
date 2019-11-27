@@ -37,9 +37,7 @@ namespace Bank_Interest_Calculator
             {
                 interestRate = percent(6);
             }
-
-
-
+                       
             totalInterest = balance * year * interestRate;
             totalInterestWithCapital = balance + totalInterest;
             totalInterestWithCapBox.Text = totalInterestWithCapital.ToString();
