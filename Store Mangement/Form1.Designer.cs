@@ -30,19 +30,40 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelSlideMenu = new System.Windows.Forms.Panel();
+            this.panelDiscountSubMenu = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.buttonDiscount = new System.Windows.Forms.Button();
+            this.panelSellSubMenu = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.buttonSell = new System.Windows.Forms.Button();
+            this.panelBuySubMenu = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.buttonBuy = new System.Windows.Forms.Button();
+            this.panelCategorySubMenu = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.buttonCategory = new System.Windows.Forms.Button();
+            this.panelProductSubMenu = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.buttonProduct = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelMainBody = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panelAddProductBody = new System.Windows.Forms.Panel();
             this.panelAddProductHead = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerProdExipire = new System.Windows.Forms.DateTimePicker();
+            this.quantityBox = new System.Windows.Forms.NumericUpDown();
+            this.ProductPrice = new System.Windows.Forms.NumericUpDown();
+            this.textBoxTotalPrice = new System.Windows.Forms.TextBox();
+            this.textBoxProductModel = new System.Windows.Forms.TextBox();
+            this.textBoxProductName = new System.Windows.Forms.TextBox();
+            this.comboBoxProductCat = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -51,38 +72,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.buttonProduct = new System.Windows.Forms.Button();
-            this.panelProductSubMenu = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panelCategorySubMenu = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.buttonCategory = new System.Windows.Forms.Button();
-            this.buttonBuy = new System.Windows.Forms.Button();
-            this.panelBuySubMenu = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panelSellSubMenu = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.buttonSell = new System.Windows.Forms.Button();
-            this.buttonDiscount = new System.Windows.Forms.Button();
-            this.panelDiscountSubMenu = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.panelSlideMenu.SuspendLayout();
+            this.panelDiscountSubMenu.SuspendLayout();
+            this.panelSellSubMenu.SuspendLayout();
+            this.panelBuySubMenu.SuspendLayout();
+            this.panelCategorySubMenu.SuspendLayout();
+            this.panelProductSubMenu.SuspendLayout();
             this.panelMainBody.SuspendLayout();
             this.panelAddProductBody.SuspendLayout();
             this.panelAddProductHead.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.panelProductSubMenu.SuspendLayout();
-            this.panelCategorySubMenu.SuspendLayout();
-            this.panelBuySubMenu.SuspendLayout();
-            this.panelSellSubMenu.SuspendLayout();
-            this.panelDiscountSubMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.quantityBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductPrice)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSlideMenu
@@ -108,6 +108,304 @@
             this.panelSlideMenu.TabIndex = 0;
             this.panelSlideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSlideMenu_Paint);
             // 
+            // panelDiscountSubMenu
+            // 
+            this.panelDiscountSubMenu.Controls.Add(this.button10);
+            this.panelDiscountSubMenu.Controls.Add(this.button7);
+            this.panelDiscountSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelDiscountSubMenu.Location = new System.Drawing.Point(0, 607);
+            this.panelDiscountSubMenu.Name = "panelDiscountSubMenu";
+            this.panelDiscountSubMenu.Size = new System.Drawing.Size(233, 100);
+            this.panelDiscountSubMenu.TabIndex = 24;
+            this.panelDiscountSubMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.SlateBlue;
+            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button10.Location = new System.Drawing.Point(0, 35);
+            this.button10.Name = "button10";
+            this.button10.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button10.Size = new System.Drawing.Size(233, 35);
+            this.button10.TabIndex = 2;
+            this.button10.Text = "Discount Products";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.SlateBlue;
+            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button7.Location = new System.Drawing.Point(0, 0);
+            this.button7.Name = "button7";
+            this.button7.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button7.Size = new System.Drawing.Size(233, 35);
+            this.button7.TabIndex = 1;
+            this.button7.Text = "Add Discount";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // buttonDiscount
+            // 
+            this.buttonDiscount.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.buttonDiscount.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonDiscount.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.buttonDiscount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDiscount.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonDiscount.Location = new System.Drawing.Point(0, 562);
+            this.buttonDiscount.Name = "buttonDiscount";
+            this.buttonDiscount.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonDiscount.Size = new System.Drawing.Size(233, 45);
+            this.buttonDiscount.TabIndex = 23;
+            this.buttonDiscount.Text = "Discounts";
+            this.buttonDiscount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDiscount.UseVisualStyleBackColor = false;
+            this.buttonDiscount.Click += new System.EventHandler(this.buttonDiscount_Click);
+            // 
+            // panelSellSubMenu
+            // 
+            this.panelSellSubMenu.Controls.Add(this.button8);
+            this.panelSellSubMenu.Controls.Add(this.button9);
+            this.panelSellSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSellSubMenu.Location = new System.Drawing.Point(0, 491);
+            this.panelSellSubMenu.Name = "panelSellSubMenu";
+            this.panelSellSubMenu.Size = new System.Drawing.Size(233, 71);
+            this.panelSellSubMenu.TabIndex = 20;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.SlateBlue;
+            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button8.Location = new System.Drawing.Point(0, 35);
+            this.button8.Name = "button8";
+            this.button8.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button8.Size = new System.Drawing.Size(233, 35);
+            this.button8.TabIndex = 1;
+            this.button8.Text = "Sells This Month";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.SlateBlue;
+            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button9.Location = new System.Drawing.Point(0, 0);
+            this.button9.Name = "button9";
+            this.button9.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button9.Size = new System.Drawing.Size(233, 35);
+            this.button9.TabIndex = 0;
+            this.button9.Text = "Sell Today";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // buttonSell
+            // 
+            this.buttonSell.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.buttonSell.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonSell.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.buttonSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSell.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonSell.Location = new System.Drawing.Point(0, 446);
+            this.buttonSell.Name = "buttonSell";
+            this.buttonSell.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonSell.Size = new System.Drawing.Size(233, 45);
+            this.buttonSell.TabIndex = 19;
+            this.buttonSell.Text = "Sell";
+            this.buttonSell.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSell.UseVisualStyleBackColor = false;
+            this.buttonSell.Click += new System.EventHandler(this.buttonSell_Click);
+            // 
+            // panelBuySubMenu
+            // 
+            this.panelBuySubMenu.Controls.Add(this.button6);
+            this.panelBuySubMenu.Controls.Add(this.button4);
+            this.panelBuySubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBuySubMenu.Location = new System.Drawing.Point(0, 375);
+            this.panelBuySubMenu.Name = "panelBuySubMenu";
+            this.panelBuySubMenu.Size = new System.Drawing.Size(233, 71);
+            this.panelBuySubMenu.TabIndex = 18;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.SlateBlue;
+            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button6.Location = new System.Drawing.Point(0, 35);
+            this.button6.Name = "button6";
+            this.button6.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button6.Size = new System.Drawing.Size(233, 35);
+            this.button6.TabIndex = 1;
+            this.button6.Text = "Buy This Month";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.SlateBlue;
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button4.Location = new System.Drawing.Point(0, 0);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(233, 35);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "Buy Today";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // buttonBuy
+            // 
+            this.buttonBuy.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.buttonBuy.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonBuy.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.buttonBuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBuy.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonBuy.Location = new System.Drawing.Point(0, 330);
+            this.buttonBuy.Name = "buttonBuy";
+            this.buttonBuy.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonBuy.Size = new System.Drawing.Size(233, 45);
+            this.buttonBuy.TabIndex = 17;
+            this.buttonBuy.Text = "Buy";
+            this.buttonBuy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBuy.UseVisualStyleBackColor = false;
+            this.buttonBuy.Click += new System.EventHandler(this.buttonBuy_Click);
+            // 
+            // panelCategorySubMenu
+            // 
+            this.panelCategorySubMenu.Controls.Add(this.button2);
+            this.panelCategorySubMenu.Controls.Add(this.button3);
+            this.panelCategorySubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelCategorySubMenu.Location = new System.Drawing.Point(0, 260);
+            this.panelCategorySubMenu.Name = "panelCategorySubMenu";
+            this.panelCategorySubMenu.Size = new System.Drawing.Size(233, 70);
+            this.panelCategorySubMenu.TabIndex = 14;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.SlateBlue;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Location = new System.Drawing.Point(0, 35);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(233, 35);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "View Categories";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.SlateBlue;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button3.Location = new System.Drawing.Point(0, 0);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(233, 35);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "Add Category";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // buttonCategory
+            // 
+            this.buttonCategory.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.buttonCategory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonCategory.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.buttonCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCategory.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonCategory.Location = new System.Drawing.Point(0, 215);
+            this.buttonCategory.Name = "buttonCategory";
+            this.buttonCategory.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonCategory.Size = new System.Drawing.Size(233, 45);
+            this.buttonCategory.TabIndex = 13;
+            this.buttonCategory.Text = "Category";
+            this.buttonCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCategory.UseVisualStyleBackColor = false;
+            this.buttonCategory.Click += new System.EventHandler(this.buttonCategory_Click);
+            // 
+            // panelProductSubMenu
+            // 
+            this.panelProductSubMenu.Controls.Add(this.button1);
+            this.panelProductSubMenu.Controls.Add(this.button13);
+            this.panelProductSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelProductSubMenu.Location = new System.Drawing.Point(0, 145);
+            this.panelProductSubMenu.Name = "panelProductSubMenu";
+            this.panelProductSubMenu.Size = new System.Drawing.Size(233, 70);
+            this.panelProductSubMenu.TabIndex = 12;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.SlateBlue;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(0, 35);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(233, 35);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "View Products";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.SlateBlue;
+            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button13.Location = new System.Drawing.Point(0, 0);
+            this.button13.Name = "button13";
+            this.button13.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button13.Size = new System.Drawing.Size(233, 35);
+            this.button13.TabIndex = 0;
+            this.button13.Text = "Add Product";
+            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // buttonProduct
+            // 
+            this.buttonProduct.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.buttonProduct.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonProduct.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.buttonProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonProduct.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonProduct.Location = new System.Drawing.Point(0, 100);
+            this.buttonProduct.Name = "buttonProduct";
+            this.buttonProduct.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonProduct.Size = new System.Drawing.Size(233, 45);
+            this.buttonProduct.TabIndex = 11;
+            this.buttonProduct.Text = "Products";
+            this.buttonProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonProduct.UseVisualStyleBackColor = false;
+            this.buttonProduct.Click += new System.EventHandler(this.buttonProduct_Click);
+            // 
             // panelLogo
             // 
             this.panelLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLogo.BackgroundImage")));
@@ -131,6 +429,17 @@
             this.panelMainBody.Size = new System.Drawing.Size(817, 561);
             this.panelMainBody.TabIndex = 1;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.ForeColor = System.Drawing.Color.Aqua;
+            this.linkLabel1.Location = new System.Drawing.Point(328, 528);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(195, 17);
+            this.linkLabel1.TabIndex = 2;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Software Developed by Ruhul";
+            // 
             // panelAddProductBody
             // 
             this.panelAddProductBody.AutoScroll = true;
@@ -139,13 +448,13 @@
             this.panelAddProductBody.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelAddProductBody.Controls.Add(this.panelAddProductHead);
             this.panelAddProductBody.Controls.Add(this.button5);
-            this.panelAddProductBody.Controls.Add(this.dateTimePicker1);
-            this.panelAddProductBody.Controls.Add(this.numericUpDown2);
-            this.panelAddProductBody.Controls.Add(this.numericUpDown1);
-            this.panelAddProductBody.Controls.Add(this.textBox2);
-            this.panelAddProductBody.Controls.Add(this.textBox3);
-            this.panelAddProductBody.Controls.Add(this.textBox1);
-            this.panelAddProductBody.Controls.Add(this.comboBox1);
+            this.panelAddProductBody.Controls.Add(this.dateTimePickerProdExipire);
+            this.panelAddProductBody.Controls.Add(this.quantityBox);
+            this.panelAddProductBody.Controls.Add(this.ProductPrice);
+            this.panelAddProductBody.Controls.Add(this.textBoxTotalPrice);
+            this.panelAddProductBody.Controls.Add(this.textBoxProductModel);
+            this.panelAddProductBody.Controls.Add(this.textBoxProductName);
+            this.panelAddProductBody.Controls.Add(this.comboBoxProductCat);
             this.panelAddProductBody.Controls.Add(this.label6);
             this.panelAddProductBody.Controls.Add(this.label5);
             this.panelAddProductBody.Controls.Add(this.label9);
@@ -194,55 +503,56 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // dateTimePicker1
+            // dateTimePickerProdExipire
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(248, 161);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(270, 23);
-            this.dateTimePicker1.TabIndex = 5;
+            this.dateTimePickerProdExipire.Location = new System.Drawing.Point(248, 161);
+            this.dateTimePickerProdExipire.Name = "dateTimePickerProdExipire";
+            this.dateTimePickerProdExipire.Size = new System.Drawing.Size(270, 23);
+            this.dateTimePickerProdExipire.TabIndex = 5;
             // 
-            // numericUpDown2
+            // quantityBox
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(248, 294);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(268, 23);
-            this.numericUpDown2.TabIndex = 4;
+            this.quantityBox.Location = new System.Drawing.Point(248, 294);
+            this.quantityBox.Name = "quantityBox";
+            this.quantityBox.Size = new System.Drawing.Size(268, 23);
+            this.quantityBox.TabIndex = 4;
             // 
-            // numericUpDown1
+            // ProductPrice
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(248, 248);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(268, 23);
-            this.numericUpDown1.TabIndex = 4;
+            this.ProductPrice.Location = new System.Drawing.Point(248, 248);
+            this.ProductPrice.Name = "ProductPrice";
+            this.ProductPrice.Size = new System.Drawing.Size(268, 23);
+            this.ProductPrice.TabIndex = 4;
             // 
-            // textBox2
+            // textBoxTotalPrice
             // 
-            this.textBox2.Location = new System.Drawing.Point(248, 338);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(270, 23);
-            this.textBox2.TabIndex = 3;
+            this.textBoxTotalPrice.Location = new System.Drawing.Point(248, 338);
+            this.textBoxTotalPrice.Name = "textBoxTotalPrice";
+            this.textBoxTotalPrice.Size = new System.Drawing.Size(270, 23);
+            this.textBoxTotalPrice.TabIndex = 3;
+            this.textBoxTotalPrice.TextChanged += new System.EventHandler(this.textBoxTotalPrice_TextChanged);
             // 
-            // textBox3
+            // textBoxProductModel
             // 
-            this.textBox3.Location = new System.Drawing.Point(248, 114);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(270, 23);
-            this.textBox3.TabIndex = 3;
+            this.textBoxProductModel.Location = new System.Drawing.Point(248, 114);
+            this.textBoxProductModel.Name = "textBoxProductModel";
+            this.textBoxProductModel.Size = new System.Drawing.Size(270, 23);
+            this.textBoxProductModel.TabIndex = 3;
             // 
-            // textBox1
+            // textBoxProductName
             // 
-            this.textBox1.Location = new System.Drawing.Point(248, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 23);
-            this.textBox1.TabIndex = 3;
+            this.textBoxProductName.Location = new System.Drawing.Point(248, 69);
+            this.textBoxProductName.Name = "textBoxProductName";
+            this.textBoxProductName.Size = new System.Drawing.Size(270, 23);
+            this.textBoxProductName.TabIndex = 3;
             // 
-            // comboBox1
+            // comboBoxProductCat
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(247, 202);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(268, 24);
-            this.comboBox1.TabIndex = 2;
+            this.comboBoxProductCat.FormattingEnabled = true;
+            this.comboBoxProductCat.Location = new System.Drawing.Point(247, 202);
+            this.comboBoxProductCat.Name = "comboBoxProductCat";
+            this.comboBoxProductCat.Size = new System.Drawing.Size(268, 24);
+            this.comboBoxProductCat.TabIndex = 2;
             // 
             // label6
             // 
@@ -321,315 +631,6 @@
             this.label1.Text = "Welcome To Store Mangement Application";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.ForeColor = System.Drawing.Color.Aqua;
-            this.linkLabel1.Location = new System.Drawing.Point(328, 528);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(195, 17);
-            this.linkLabel1.TabIndex = 2;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Software Developed by Ruhul";
-            // 
-            // buttonProduct
-            // 
-            this.buttonProduct.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.buttonProduct.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonProduct.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.buttonProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonProduct.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonProduct.Location = new System.Drawing.Point(0, 100);
-            this.buttonProduct.Name = "buttonProduct";
-            this.buttonProduct.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonProduct.Size = new System.Drawing.Size(233, 45);
-            this.buttonProduct.TabIndex = 11;
-            this.buttonProduct.Text = "Products";
-            this.buttonProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonProduct.UseVisualStyleBackColor = false;
-            this.buttonProduct.Click += new System.EventHandler(this.buttonProduct_Click);
-            // 
-            // panelProductSubMenu
-            // 
-            this.panelProductSubMenu.Controls.Add(this.button1);
-            this.panelProductSubMenu.Controls.Add(this.button13);
-            this.panelProductSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelProductSubMenu.Location = new System.Drawing.Point(0, 145);
-            this.panelProductSubMenu.Name = "panelProductSubMenu";
-            this.panelProductSubMenu.Size = new System.Drawing.Size(233, 70);
-            this.panelProductSubMenu.TabIndex = 12;
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.SlateBlue;
-            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button13.Location = new System.Drawing.Point(0, 0);
-            this.button13.Name = "button13";
-            this.button13.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(233, 35);
-            this.button13.TabIndex = 0;
-            this.button13.Text = "Add Product";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.SlateBlue;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(0, 35);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(233, 35);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "View Products";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panelCategorySubMenu
-            // 
-            this.panelCategorySubMenu.Controls.Add(this.button2);
-            this.panelCategorySubMenu.Controls.Add(this.button3);
-            this.panelCategorySubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelCategorySubMenu.Location = new System.Drawing.Point(0, 260);
-            this.panelCategorySubMenu.Name = "panelCategorySubMenu";
-            this.panelCategorySubMenu.Size = new System.Drawing.Size(233, 70);
-            this.panelCategorySubMenu.TabIndex = 14;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.SlateBlue;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(0, 35);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(233, 35);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "View Categories";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.SlateBlue;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(0, 0);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(233, 35);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Add Category";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // buttonCategory
-            // 
-            this.buttonCategory.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.buttonCategory.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonCategory.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.buttonCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCategory.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonCategory.Location = new System.Drawing.Point(0, 215);
-            this.buttonCategory.Name = "buttonCategory";
-            this.buttonCategory.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonCategory.Size = new System.Drawing.Size(233, 45);
-            this.buttonCategory.TabIndex = 13;
-            this.buttonCategory.Text = "Category";
-            this.buttonCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCategory.UseVisualStyleBackColor = false;
-            this.buttonCategory.Click += new System.EventHandler(this.buttonCategory_Click);
-            // 
-            // buttonBuy
-            // 
-            this.buttonBuy.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.buttonBuy.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonBuy.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.buttonBuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBuy.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonBuy.Location = new System.Drawing.Point(0, 330);
-            this.buttonBuy.Name = "buttonBuy";
-            this.buttonBuy.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonBuy.Size = new System.Drawing.Size(233, 45);
-            this.buttonBuy.TabIndex = 17;
-            this.buttonBuy.Text = "Buy";
-            this.buttonBuy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonBuy.UseVisualStyleBackColor = false;
-            this.buttonBuy.Click += new System.EventHandler(this.buttonBuy_Click);
-            // 
-            // panelBuySubMenu
-            // 
-            this.panelBuySubMenu.Controls.Add(this.button6);
-            this.panelBuySubMenu.Controls.Add(this.button4);
-            this.panelBuySubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBuySubMenu.Location = new System.Drawing.Point(0, 375);
-            this.panelBuySubMenu.Name = "panelBuySubMenu";
-            this.panelBuySubMenu.Size = new System.Drawing.Size(233, 71);
-            this.panelBuySubMenu.TabIndex = 18;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.SlateBlue;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(0, 0);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(233, 35);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Buy Today";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.SlateBlue;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button6.Location = new System.Drawing.Point(0, 35);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(233, 35);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Buy This Month";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // panelSellSubMenu
-            // 
-            this.panelSellSubMenu.Controls.Add(this.button8);
-            this.panelSellSubMenu.Controls.Add(this.button9);
-            this.panelSellSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSellSubMenu.Location = new System.Drawing.Point(0, 491);
-            this.panelSellSubMenu.Name = "panelSellSubMenu";
-            this.panelSellSubMenu.Size = new System.Drawing.Size(233, 71);
-            this.panelSellSubMenu.TabIndex = 20;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.SlateBlue;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button8.Location = new System.Drawing.Point(0, 35);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(233, 35);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "Sells This Month";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.SlateBlue;
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button9.Location = new System.Drawing.Point(0, 0);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(233, 35);
-            this.button9.TabIndex = 0;
-            this.button9.Text = "Sell Today";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // buttonSell
-            // 
-            this.buttonSell.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.buttonSell.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSell.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.buttonSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSell.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonSell.Location = new System.Drawing.Point(0, 446);
-            this.buttonSell.Name = "buttonSell";
-            this.buttonSell.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonSell.Size = new System.Drawing.Size(233, 45);
-            this.buttonSell.TabIndex = 19;
-            this.buttonSell.Text = "Sell";
-            this.buttonSell.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSell.UseVisualStyleBackColor = false;
-            this.buttonSell.Click += new System.EventHandler(this.buttonSell_Click);
-            // 
-            // buttonDiscount
-            // 
-            this.buttonDiscount.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.buttonDiscount.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonDiscount.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.buttonDiscount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDiscount.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonDiscount.Location = new System.Drawing.Point(0, 562);
-            this.buttonDiscount.Name = "buttonDiscount";
-            this.buttonDiscount.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonDiscount.Size = new System.Drawing.Size(233, 45);
-            this.buttonDiscount.TabIndex = 23;
-            this.buttonDiscount.Text = "Discounts";
-            this.buttonDiscount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDiscount.UseVisualStyleBackColor = false;
-            this.buttonDiscount.Click += new System.EventHandler(this.buttonDiscount_Click);
-            // 
-            // panelDiscountSubMenu
-            // 
-            this.panelDiscountSubMenu.Controls.Add(this.button10);
-            this.panelDiscountSubMenu.Controls.Add(this.button7);
-            this.panelDiscountSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDiscountSubMenu.Location = new System.Drawing.Point(0, 607);
-            this.panelDiscountSubMenu.Name = "panelDiscountSubMenu";
-            this.panelDiscountSubMenu.Size = new System.Drawing.Size(233, 100);
-            this.panelDiscountSubMenu.TabIndex = 24;
-            this.panelDiscountSubMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.SlateBlue;
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button7.Location = new System.Drawing.Point(0, 0);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(233, 35);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "Add Discount";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.SlateBlue;
-            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button10.Location = new System.Drawing.Point(0, 35);
-            this.button10.Name = "button10";
-            this.button10.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(233, 35);
-            this.button10.TabIndex = 2;
-            this.button10.Text = "Discount Products";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.UseVisualStyleBackColor = false;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -643,19 +644,19 @@
             this.Name = "FormMain";
             this.Text = "Store Mangement";
             this.panelSlideMenu.ResumeLayout(false);
+            this.panelDiscountSubMenu.ResumeLayout(false);
+            this.panelSellSubMenu.ResumeLayout(false);
+            this.panelBuySubMenu.ResumeLayout(false);
+            this.panelCategorySubMenu.ResumeLayout(false);
+            this.panelProductSubMenu.ResumeLayout(false);
             this.panelMainBody.ResumeLayout(false);
             this.panelMainBody.PerformLayout();
             this.panelAddProductBody.ResumeLayout(false);
             this.panelAddProductBody.PerformLayout();
             this.panelAddProductHead.ResumeLayout(false);
             this.panelAddProductHead.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.panelProductSubMenu.ResumeLayout(false);
-            this.panelCategorySubMenu.ResumeLayout(false);
-            this.panelBuySubMenu.ResumeLayout(false);
-            this.panelSellSubMenu.ResumeLayout(false);
-            this.panelDiscountSubMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.quantityBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductPrice)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -668,20 +669,20 @@
         private System.Windows.Forms.Panel panelMainBody;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelAddProductBody;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBoxProductName;
+        private System.Windows.Forms.ComboBox comboBoxProductCat;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown ProductPrice;
+        private System.Windows.Forms.NumericUpDown quantityBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxTotalPrice;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxProductModel;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerProdExipire;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panelAddProductHead;
         private System.Windows.Forms.Label label10;
