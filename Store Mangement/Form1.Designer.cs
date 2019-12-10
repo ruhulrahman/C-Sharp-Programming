@@ -53,7 +53,7 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelMainBody = new System.Windows.Forms.Panel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.panelAddProductBody = new System.Windows.Forms.Panel();
+            this.panelChildForm = new System.Windows.Forms.Panel();
             this.panelAddProductHead = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
@@ -79,7 +79,7 @@
             this.panelCategorySubMenu.SuspendLayout();
             this.panelProductSubMenu.SuspendLayout();
             this.panelMainBody.SuspendLayout();
-            this.panelAddProductBody.SuspendLayout();
+            this.panelChildForm.SuspendLayout();
             this.panelAddProductHead.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quantityBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProductPrice)).BeginInit();
@@ -419,9 +419,9 @@
             // panelMainBody
             // 
             this.panelMainBody.AutoSize = true;
-            this.panelMainBody.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panelMainBody.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.panelMainBody.Controls.Add(this.linkLabel1);
-            this.panelMainBody.Controls.Add(this.panelAddProductBody);
+            this.panelMainBody.Controls.Add(this.panelChildForm);
             this.panelMainBody.Controls.Add(this.label1);
             this.panelMainBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMainBody.Location = new System.Drawing.Point(250, 0);
@@ -432,40 +432,43 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.linkLabel1.ForeColor = System.Drawing.Color.Aqua;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Red;
             this.linkLabel1.Location = new System.Drawing.Point(328, 528);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(195, 17);
             this.linkLabel1.TabIndex = 2;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Software Developed by Ruhul";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Fuchsia;
             // 
-            // panelAddProductBody
+            // panelChildForm
             // 
-            this.panelAddProductBody.AutoScroll = true;
-            this.panelAddProductBody.AutoSize = true;
-            this.panelAddProductBody.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panelAddProductBody.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelAddProductBody.Controls.Add(this.panelAddProductHead);
-            this.panelAddProductBody.Controls.Add(this.button5);
-            this.panelAddProductBody.Controls.Add(this.dateTimePickerProdExipire);
-            this.panelAddProductBody.Controls.Add(this.quantityBox);
-            this.panelAddProductBody.Controls.Add(this.ProductPrice);
-            this.panelAddProductBody.Controls.Add(this.textBoxTotalPrice);
-            this.panelAddProductBody.Controls.Add(this.textBoxProductModel);
-            this.panelAddProductBody.Controls.Add(this.textBoxProductName);
-            this.panelAddProductBody.Controls.Add(this.comboBoxProductCat);
-            this.panelAddProductBody.Controls.Add(this.label6);
-            this.panelAddProductBody.Controls.Add(this.label5);
-            this.panelAddProductBody.Controls.Add(this.label9);
-            this.panelAddProductBody.Controls.Add(this.label7);
-            this.panelAddProductBody.Controls.Add(this.label8);
-            this.panelAddProductBody.Controls.Add(this.label4);
-            this.panelAddProductBody.Controls.Add(this.label3);
-            this.panelAddProductBody.Location = new System.Drawing.Point(37, 58);
-            this.panelAddProductBody.Name = "panelAddProductBody";
-            this.panelAddProductBody.Size = new System.Drawing.Size(744, 446);
-            this.panelAddProductBody.TabIndex = 1;
+            this.panelChildForm.AutoScroll = true;
+            this.panelChildForm.AutoSize = true;
+            this.panelChildForm.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelChildForm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelChildForm.Controls.Add(this.panelAddProductHead);
+            this.panelChildForm.Controls.Add(this.button5);
+            this.panelChildForm.Controls.Add(this.dateTimePickerProdExipire);
+            this.panelChildForm.Controls.Add(this.quantityBox);
+            this.panelChildForm.Controls.Add(this.ProductPrice);
+            this.panelChildForm.Controls.Add(this.textBoxTotalPrice);
+            this.panelChildForm.Controls.Add(this.textBoxProductModel);
+            this.panelChildForm.Controls.Add(this.textBoxProductName);
+            this.panelChildForm.Controls.Add(this.comboBoxProductCat);
+            this.panelChildForm.Controls.Add(this.label6);
+            this.panelChildForm.Controls.Add(this.label5);
+            this.panelChildForm.Controls.Add(this.label9);
+            this.panelChildForm.Controls.Add(this.label7);
+            this.panelChildForm.Controls.Add(this.label8);
+            this.panelChildForm.Controls.Add(this.label4);
+            this.panelChildForm.Controls.Add(this.label3);
+            this.panelChildForm.Location = new System.Drawing.Point(37, 58);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(744, 446);
+            this.panelChildForm.TabIndex = 1;
             // 
             // panelAddProductHead
             // 
@@ -651,8 +654,8 @@
             this.panelProductSubMenu.ResumeLayout(false);
             this.panelMainBody.ResumeLayout(false);
             this.panelMainBody.PerformLayout();
-            this.panelAddProductBody.ResumeLayout(false);
-            this.panelAddProductBody.PerformLayout();
+            this.panelChildForm.ResumeLayout(false);
+            this.panelChildForm.PerformLayout();
             this.panelAddProductHead.ResumeLayout(false);
             this.panelAddProductHead.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quantityBox)).EndInit();
@@ -668,7 +671,7 @@
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel panelMainBody;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panelAddProductBody;
+        private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.TextBox textBoxProductName;
         private System.Windows.Forms.ComboBox comboBoxProductCat;
         private System.Windows.Forms.Label label4;
