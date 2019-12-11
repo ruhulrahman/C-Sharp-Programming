@@ -17,7 +17,7 @@ namespace Store_Mangement
             InitializeComponent();
             customizeDesign();
 
-            textBoxTotalPrice.Text = 0.ToString();
+            
         }
 
         private void customizeDesign()
@@ -27,6 +27,7 @@ namespace Store_Mangement
             panelBuySubMenu.Visible = false;
             panelSellSubMenu.Visible = false;
             panelDiscountSubMenu.Visible = false;
+            panelUserManagementSubMenu.Visible = false;
         }
 
         private void hideSubMenu()
@@ -51,6 +52,10 @@ namespace Store_Mangement
             {
                 panelDiscountSubMenu.Visible = false;
             }
+            if(panelUserManagementSubMenu.Visible == true)
+            {
+                panelUserManagementSubMenu.Visible = false;
+            }
         }
 
         private void showSubMenu(Panel submenu)
@@ -71,37 +76,7 @@ namespace Store_Mangement
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            string productName = textBoxProductName.Text;
-            string productModel = textBoxProductModel.Text;
-            string prodExpireDate = dateTimePickerProdExipire.Text;
-            string productCat = comboBoxProductCat.Text;
-            int productPrice = Convert.ToInt32(ProductPrice.Value);
-            int productQuantity = Convert.ToInt32(quantityBox.Value);
-            //int totalPrice = int.Parse(textBoxTotalPrice.Text);
-
-            if(productName == "" || productModel == ""|| prodExpireDate == "" || productCat == "" || textBoxTotalPrice.Text =="")
-            {
-                MessageBox.Show("Please fill these fields");
-            }
-            else
-            {
-                int totalPrice = productPrice * productQuantity;
-                textBoxTotalPrice.Text = totalPrice.ToString();
-            }
-
-        }
-
-        public void Multiply()
-        {
-            int price;
-            //false(int.TryParse)
-            int productPrice = Convert.ToInt32(ProductPrice.Value);
-            int productQuantity = Convert.ToInt32(quantityBox.Value);
-            int totalPrice = productPrice * productQuantity;
-            textBoxTotalPrice.Text = totalPrice.ToString();
-        }
+   
 
         private void buttonProduct_Click(object sender, EventArgs e)
         {
@@ -123,15 +98,19 @@ namespace Store_Mangement
             showSubMenu(panelSellSubMenu);
         }
 
+        private void buttonUserManage_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelUserManagementSubMenu);
+        }
         private void button13_Click(object sender, EventArgs e)
         {
-            //code here 
+            openChildForm(new AddProductForm());
             //hideSubMenu();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //code here 
+            openChildForm(new ProductListForm());
             //hideSubMenu();
         }
 
@@ -145,10 +124,6 @@ namespace Store_Mangement
             showSubMenu(panelDiscountSubMenu);
         }
 
-        private void textBoxTotalPrice_TextChanged(object sender, EventArgs e)
-        {
-            Multiply();
-        }
 
         private Form activeForm = null;
         private void openChildForm(Form childForm)
@@ -166,6 +141,186 @@ namespace Store_Mangement
             panelChildForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddUser_Click(object sender, EventArgs e)
+        {
+            openChildForm(new AddUserForm());
+        }
+
+        private void panelChildForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelSellSubMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelBuySubMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelCategorySubMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelProductSubMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelLogo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelMainBody_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void panelAddProductHead_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePickerProdExipire_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quantityBox_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProductPrice_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxProductModel_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxProductName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxProductCat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelUserManagementSubMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnViewUsers_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
