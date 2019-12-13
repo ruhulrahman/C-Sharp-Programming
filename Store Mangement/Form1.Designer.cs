@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelSlideMenu = new System.Windows.Forms.Panel();
+            this.panelUserManagementSubMenu = new System.Windows.Forms.Panel();
+            this.btnViewUsers = new System.Windows.Forms.Button();
+            this.btnAddUser = new System.Windows.Forms.Button();
+            this.buttonUserManage = new System.Windows.Forms.Button();
             this.panelDiscountSubMenu = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -50,24 +54,20 @@
             this.btnProductList = new System.Windows.Forms.Button();
             this.btnAddProduct = new System.Windows.Forms.Button();
             this.buttonProduct = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.panelMainBody = new System.Windows.Forms.Panel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonUserManage = new System.Windows.Forms.Button();
-            this.panelUserManagementSubMenu = new System.Windows.Forms.Panel();
-            this.btnAddUser = new System.Windows.Forms.Button();
-            this.btnViewUsers = new System.Windows.Forms.Button();
-            this.panelLogo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panelSlideMenu.SuspendLayout();
+            this.panelUserManagementSubMenu.SuspendLayout();
             this.panelDiscountSubMenu.SuspendLayout();
             this.panelSellSubMenu.SuspendLayout();
             this.panelBuySubMenu.SuspendLayout();
             this.panelCategorySubMenu.SuspendLayout();
             this.panelProductSubMenu.SuspendLayout();
             this.panelMainBody.SuspendLayout();
-            this.panelUserManagementSubMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,6 +95,68 @@
             this.panelSlideMenu.Size = new System.Drawing.Size(250, 561);
             this.panelSlideMenu.TabIndex = 0;
             this.panelSlideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSlideMenu_Paint);
+            // 
+            // panelUserManagementSubMenu
+            // 
+            this.panelUserManagementSubMenu.Controls.Add(this.btnViewUsers);
+            this.panelUserManagementSubMenu.Controls.Add(this.btnAddUser);
+            this.panelUserManagementSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelUserManagementSubMenu.Location = new System.Drawing.Point(0, 724);
+            this.panelUserManagementSubMenu.Name = "panelUserManagementSubMenu";
+            this.panelUserManagementSubMenu.Size = new System.Drawing.Size(233, 85);
+            this.panelUserManagementSubMenu.TabIndex = 26;
+            this.panelUserManagementSubMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelUserManagementSubMenu_Paint);
+            // 
+            // btnViewUsers
+            // 
+            this.btnViewUsers.BackColor = System.Drawing.Color.SlateBlue;
+            this.btnViewUsers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnViewUsers.FlatAppearance.BorderSize = 0;
+            this.btnViewUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewUsers.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnViewUsers.Location = new System.Drawing.Point(0, 35);
+            this.btnViewUsers.Name = "btnViewUsers";
+            this.btnViewUsers.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnViewUsers.Size = new System.Drawing.Size(233, 35);
+            this.btnViewUsers.TabIndex = 3;
+            this.btnViewUsers.Text = "Users List";
+            this.btnViewUsers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnViewUsers.UseVisualStyleBackColor = false;
+            this.btnViewUsers.Click += new System.EventHandler(this.btnViewUsers_Click);
+            // 
+            // btnAddUser
+            // 
+            this.btnAddUser.BackColor = System.Drawing.Color.SlateBlue;
+            this.btnAddUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddUser.FlatAppearance.BorderSize = 0;
+            this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddUser.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAddUser.Location = new System.Drawing.Point(0, 0);
+            this.btnAddUser.Name = "btnAddUser";
+            this.btnAddUser.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnAddUser.Size = new System.Drawing.Size(233, 35);
+            this.btnAddUser.TabIndex = 2;
+            this.btnAddUser.Text = "Add User";
+            this.btnAddUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddUser.UseVisualStyleBackColor = false;
+            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
+            // 
+            // buttonUserManage
+            // 
+            this.buttonUserManage.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.buttonUserManage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonUserManage.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.buttonUserManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUserManage.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonUserManage.Location = new System.Drawing.Point(0, 679);
+            this.buttonUserManage.Name = "buttonUserManage";
+            this.buttonUserManage.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonUserManage.Size = new System.Drawing.Size(233, 45);
+            this.buttonUserManage.TabIndex = 25;
+            this.buttonUserManage.Text = "User Management";
+            this.buttonUserManage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonUserManage.UseVisualStyleBackColor = false;
+            this.buttonUserManage.Click += new System.EventHandler(this.buttonUserManage_Click);
             // 
             // panelDiscountSubMenu
             // 
@@ -406,6 +468,17 @@
             this.buttonProduct.UseVisualStyleBackColor = false;
             this.buttonProduct.Click += new System.EventHandler(this.buttonProduct_Click);
             // 
+            // panelLogo
+            // 
+            this.panelLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLogo.BackgroundImage")));
+            this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(233, 100);
+            this.panelLogo.TabIndex = 0;
+            this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
+            // 
             // panelMainBody
             // 
             this.panelMainBody.AutoSize = true;
@@ -419,21 +492,6 @@
             this.panelMainBody.Size = new System.Drawing.Size(817, 561);
             this.panelMainBody.TabIndex = 1;
             this.panelMainBody.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMainBody_Paint);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.linkLabel1.ForeColor = System.Drawing.Color.Aqua;
-            this.linkLabel1.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel1.Location = new System.Drawing.Point(307, 9);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(195, 17);
-            this.linkLabel1.TabIndex = 2;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Software Developed by Ruhul";
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Fuchsia;
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // panelChildForm
             // 
@@ -465,79 +523,6 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // buttonUserManage
-            // 
-            this.buttonUserManage.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.buttonUserManage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonUserManage.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.buttonUserManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUserManage.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonUserManage.Location = new System.Drawing.Point(0, 679);
-            this.buttonUserManage.Name = "buttonUserManage";
-            this.buttonUserManage.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonUserManage.Size = new System.Drawing.Size(233, 45);
-            this.buttonUserManage.TabIndex = 25;
-            this.buttonUserManage.Text = "User Management";
-            this.buttonUserManage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonUserManage.UseVisualStyleBackColor = false;
-            this.buttonUserManage.Click += new System.EventHandler(this.buttonUserManage_Click);
-            // 
-            // panelUserManagementSubMenu
-            // 
-            this.panelUserManagementSubMenu.Controls.Add(this.btnViewUsers);
-            this.panelUserManagementSubMenu.Controls.Add(this.btnAddUser);
-            this.panelUserManagementSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelUserManagementSubMenu.Location = new System.Drawing.Point(0, 724);
-            this.panelUserManagementSubMenu.Name = "panelUserManagementSubMenu";
-            this.panelUserManagementSubMenu.Size = new System.Drawing.Size(233, 85);
-            this.panelUserManagementSubMenu.TabIndex = 26;
-            this.panelUserManagementSubMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelUserManagementSubMenu_Paint);
-            // 
-            // btnAddUser
-            // 
-            this.btnAddUser.BackColor = System.Drawing.Color.SlateBlue;
-            this.btnAddUser.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAddUser.FlatAppearance.BorderSize = 0;
-            this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddUser.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAddUser.Location = new System.Drawing.Point(0, 0);
-            this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnAddUser.Size = new System.Drawing.Size(233, 35);
-            this.btnAddUser.TabIndex = 2;
-            this.btnAddUser.Text = "Add User";
-            this.btnAddUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddUser.UseVisualStyleBackColor = false;
-            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
-            // 
-            // btnViewUsers
-            // 
-            this.btnViewUsers.BackColor = System.Drawing.Color.SlateBlue;
-            this.btnViewUsers.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnViewUsers.FlatAppearance.BorderSize = 0;
-            this.btnViewUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewUsers.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnViewUsers.Location = new System.Drawing.Point(0, 35);
-            this.btnViewUsers.Name = "btnViewUsers";
-            this.btnViewUsers.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnViewUsers.Size = new System.Drawing.Size(233, 35);
-            this.btnViewUsers.TabIndex = 3;
-            this.btnViewUsers.Text = "Users List";
-            this.btnViewUsers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnViewUsers.UseVisualStyleBackColor = false;
-            this.btnViewUsers.Click += new System.EventHandler(this.btnViewUsers_Click);
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLogo.BackgroundImage")));
-            this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(233, 100);
-            this.panelLogo.TabIndex = 0;
-            this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.linkLabel1);
@@ -546,6 +531,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(817, 35);
             this.panel1.TabIndex = 3;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.linkLabel1.ForeColor = System.Drawing.Color.Aqua;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Red;
+            this.linkLabel1.Location = new System.Drawing.Point(307, 9);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(195, 17);
+            this.linkLabel1.TabIndex = 2;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Software Developed by Ruhul";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Fuchsia;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // FormMain
             // 
@@ -560,6 +560,7 @@
             this.Name = "FormMain";
             this.Text = "Store Mangement";
             this.panelSlideMenu.ResumeLayout(false);
+            this.panelUserManagementSubMenu.ResumeLayout(false);
             this.panelDiscountSubMenu.ResumeLayout(false);
             this.panelSellSubMenu.ResumeLayout(false);
             this.panelBuySubMenu.ResumeLayout(false);
@@ -567,7 +568,6 @@
             this.panelProductSubMenu.ResumeLayout(false);
             this.panelMainBody.ResumeLayout(false);
             this.panelMainBody.PerformLayout();
-            this.panelUserManagementSubMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

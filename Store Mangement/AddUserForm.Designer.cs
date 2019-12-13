@@ -30,16 +30,16 @@
         {
             this.panelAddProductHead = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBoxProductModel = new System.Windows.Forms.TextBox();
-            this.textBoxProductName = new System.Windows.Forms.TextBox();
-            this.comboBoxProductCat = new System.Windows.Forms.ComboBox();
+            this.btnInsertUser = new System.Windows.Forms.Button();
+            this.tbUsername = new System.Windows.Forms.TextBox();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.cbUserType = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbPhone = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbPass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panelAddProductHead.SuspendLayout();
             this.SuspendLayout();
@@ -66,45 +66,46 @@
             this.label10.TabIndex = 1;
             this.label10.Text = "Add New User";
             // 
-            // button5
+            // btnInsertUser
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button5.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(245, 276);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(271, 42);
-            this.button5.TabIndex = 38;
-            this.button5.Text = "Insert User";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnInsertUser.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnInsertUser.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnInsertUser.FlatAppearance.BorderSize = 0;
+            this.btnInsertUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInsertUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertUser.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnInsertUser.Location = new System.Drawing.Point(245, 276);
+            this.btnInsertUser.Name = "btnInsertUser";
+            this.btnInsertUser.Size = new System.Drawing.Size(271, 42);
+            this.btnInsertUser.TabIndex = 38;
+            this.btnInsertUser.Text = "Insert User";
+            this.btnInsertUser.UseVisualStyleBackColor = false;
+            this.btnInsertUser.Click += new System.EventHandler(this.button5_Click);
             // 
-            // textBoxProductModel
+            // tbUsername
             // 
-            this.textBoxProductModel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxProductModel.Location = new System.Drawing.Point(248, 117);
-            this.textBoxProductModel.Name = "textBoxProductModel";
-            this.textBoxProductModel.Size = new System.Drawing.Size(270, 20);
-            this.textBoxProductModel.TabIndex = 33;
+            this.tbUsername.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tbUsername.Location = new System.Drawing.Point(248, 117);
+            this.tbUsername.Name = "tbUsername";
+            this.tbUsername.Size = new System.Drawing.Size(270, 20);
+            this.tbUsername.TabIndex = 33;
             // 
-            // textBoxProductName
+            // tbName
             // 
-            this.textBoxProductName.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxProductName.Location = new System.Drawing.Point(248, 81);
-            this.textBoxProductName.Name = "textBoxProductName";
-            this.textBoxProductName.Size = new System.Drawing.Size(270, 20);
-            this.textBoxProductName.TabIndex = 34;
+            this.tbName.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tbName.Location = new System.Drawing.Point(248, 81);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(270, 20);
+            this.tbName.TabIndex = 34;
             // 
-            // comboBoxProductCat
+            // cbUserType
             // 
-            this.comboBoxProductCat.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBoxProductCat.FormattingEnabled = true;
-            this.comboBoxProductCat.Location = new System.Drawing.Point(248, 227);
-            this.comboBoxProductCat.Name = "comboBoxProductCat";
-            this.comboBoxProductCat.Size = new System.Drawing.Size(268, 21);
-            this.comboBoxProductCat.TabIndex = 31;
+            this.cbUserType.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cbUserType.FormattingEnabled = true;
+            this.cbUserType.Location = new System.Drawing.Point(248, 227);
+            this.cbUserType.Name = "cbUserType";
+            this.cbUserType.Size = new System.Drawing.Size(268, 21);
+            this.cbUserType.TabIndex = 31;
             // 
             // label8
             // 
@@ -136,13 +137,13 @@
             this.label3.TabIndex = 30;
             this.label3.Text = "Name";
             // 
-            // textBox1
+            // tbPhone
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.Location = new System.Drawing.Point(248, 153);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 20);
-            this.textBox1.TabIndex = 41;
+            this.tbPhone.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tbPhone.Location = new System.Drawing.Point(248, 153);
+            this.tbPhone.Name = "tbPhone";
+            this.tbPhone.Size = new System.Drawing.Size(270, 20);
+            this.tbPhone.TabIndex = 41;
             // 
             // label1
             // 
@@ -154,13 +155,13 @@
             this.label1.TabIndex = 40;
             this.label1.Text = "Phone";
             // 
-            // textBox2
+            // tbPass
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox2.Location = new System.Drawing.Point(248, 189);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(270, 20);
-            this.textBox2.TabIndex = 43;
+            this.tbPass.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tbPass.Location = new System.Drawing.Point(248, 189);
+            this.tbPass.Name = "tbPass";
+            this.tbPass.Size = new System.Drawing.Size(270, 20);
+            this.tbPass.TabIndex = 43;
             // 
             // label2
             // 
@@ -177,15 +178,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 407);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbPass);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbPhone);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelAddProductHead);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBoxProductModel);
-            this.Controls.Add(this.textBoxProductName);
-            this.Controls.Add(this.comboBoxProductCat);
+            this.Controls.Add(this.btnInsertUser);
+            this.Controls.Add(this.tbUsername);
+            this.Controls.Add(this.tbName);
+            this.Controls.Add(this.cbUserType);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -202,16 +203,16 @@
 
         private System.Windows.Forms.Panel panelAddProductHead;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBoxProductModel;
-        private System.Windows.Forms.TextBox textBoxProductName;
-        private System.Windows.Forms.ComboBox comboBoxProductCat;
+        private System.Windows.Forms.Button btnInsertUser;
+        private System.Windows.Forms.TextBox tbUsername;
+        private System.Windows.Forms.TextBox tbName;
+        private System.Windows.Forms.ComboBox cbUserType;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbPhone;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbPass;
         private System.Windows.Forms.Label label2;
     }
 }
