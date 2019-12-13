@@ -320,7 +320,7 @@ namespace Store_Mangement
 
         private void btnViewUsers_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new UsersListForm());
         }
     }
 }
