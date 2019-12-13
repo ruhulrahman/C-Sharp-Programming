@@ -18,33 +18,37 @@ namespace Store_Mangement
             Admin=1,
             User=2,
         }
+        SqlConnection con = new SqlConnection();
+        SqlCommand com = new SqlCommand();
+
         public AddUserForm()
         {
             InitializeComponent();
+            con.ConnectionString = "Data Source=LAB_612_17;Initial Catalog=Storemanagement;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             foreach (var item in Enum.GetValues(typeof(UserType)))
             {
-                cbUserType.Items.Add(item);
+                //cbUserType.Items.Add(item);
             }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             int i = 0;
-            string connetionString = "Data Source=ServerName;Initial Catalog=DatabaseName;User ID=UserName;Password=Password";
-            SqlConnection con = new SqlConnection(connetionString);
             con.Open();
+            com.Connection = con;
+            //com.CommandText = "Select * from user_info";
+            //SqlDataReader dr = com.ExecuteReader();
 
-            SqlCommand cmd = new SqlCommand("insert into UserTable values (@ID, @Name, @UserName, @)Phone, @Pass, @UserType");
-            cmd.Parameters.AddWithValue("@ID", i++);
-            cmd.Parameters.AddWithValue("@Name", tbName.Text);
-            cmd.Parameters.AddWithValue("@UserName", tbUsername.Text);
-            cmd.Parameters.AddWithValue("@Phone", tbPhone.Text);
-            cmd.Parameters.AddWithValue("@Pass", tbPass.Text);
-            cmd.Parameters.AddWithValue("@UserType", cbUserType.SelectedItem);
-            cmd.ExecuteNonQuery();
-            con.Close();
-            MessageBox.Show("User created successfully");
-
+            if(tbName.Text == "" || tbUsername.Text == "" || tbemail.Text == "" || tbPhone.Text == "" || tbPass.Text == "")
+            {
+                MessageBox.Show("Please fill the filds");
+            }
+            else
+            {
+                com.CommandText = "@INSERT INTO users (userId, name, userName, email, phone, password) VALUES ('"+ tbName.Text + "','" + tbUsername.Text + "','" + tbemail.Text + "','" + tbPhone.Text + "','" + tbPass.Text + "')";
+                con.Close();
+                MessageBox.Show("User created successfully");
+            }
         }
     }
 }

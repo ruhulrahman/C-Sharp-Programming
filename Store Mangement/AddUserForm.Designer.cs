@@ -33,14 +33,14 @@
             this.btnInsertUser = new System.Windows.Forms.Button();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.tbName = new System.Windows.Forms.TextBox();
-            this.cbUserType = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tbPhone = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbPass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.tbemail = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panelAddProductHead.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +74,7 @@
             this.btnInsertUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsertUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsertUser.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnInsertUser.Location = new System.Drawing.Point(245, 276);
+            this.btnInsertUser.Location = new System.Drawing.Point(245, 253);
             this.btnInsertUser.Name = "btnInsertUser";
             this.btnInsertUser.Size = new System.Drawing.Size(271, 42);
             this.btnInsertUser.TabIndex = 38;
@@ -98,15 +98,6 @@
             this.tbName.Size = new System.Drawing.Size(270, 20);
             this.tbName.TabIndex = 34;
             // 
-            // cbUserType
-            // 
-            this.cbUserType.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cbUserType.FormattingEnabled = true;
-            this.cbUserType.Location = new System.Drawing.Point(248, 227);
-            this.cbUserType.Name = "cbUserType";
-            this.cbUserType.Size = new System.Drawing.Size(268, 21);
-            this.cbUserType.TabIndex = 31;
-            // 
             // label8
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -116,16 +107,6 @@
             this.label8.Size = new System.Drawing.Size(55, 13);
             this.label8.TabIndex = 28;
             this.label8.Text = "Username";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(123, 230);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 13);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "User Type";
             // 
             // label3
             // 
@@ -140,7 +121,7 @@
             // tbPhone
             // 
             this.tbPhone.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tbPhone.Location = new System.Drawing.Point(248, 153);
+            this.tbPhone.Location = new System.Drawing.Point(248, 170);
             this.tbPhone.Name = "tbPhone";
             this.tbPhone.Size = new System.Drawing.Size(270, 20);
             this.tbPhone.TabIndex = 41;
@@ -149,7 +130,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(141, 153);
+            this.label1.Location = new System.Drawing.Point(141, 170);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 40;
@@ -158,7 +139,7 @@
             // tbPass
             // 
             this.tbPass.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tbPass.Location = new System.Drawing.Point(248, 189);
+            this.tbPass.Location = new System.Drawing.Point(248, 206);
             this.tbPass.Name = "tbPass";
             this.tbPass.Size = new System.Drawing.Size(270, 20);
             this.tbPass.TabIndex = 43;
@@ -167,17 +148,37 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(141, 189);
+            this.label2.Location = new System.Drawing.Point(141, 206);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 42;
             this.label2.Text = "Password";
+            // 
+            // tbemail
+            // 
+            this.tbemail.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tbemail.Location = new System.Drawing.Point(246, 143);
+            this.tbemail.Name = "tbemail";
+            this.tbemail.Size = new System.Drawing.Size(270, 20);
+            this.tbemail.TabIndex = 45;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(139, 143);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "Email";
             // 
             // AddUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 407);
+            this.Controls.Add(this.tbemail);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.tbPass);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbPhone);
@@ -186,9 +187,7 @@
             this.Controls.Add(this.btnInsertUser);
             this.Controls.Add(this.tbUsername);
             this.Controls.Add(this.tbName);
-            this.Controls.Add(this.cbUserType);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Name = "AddUserForm";
             this.Text = "AddUserForm";
@@ -206,13 +205,13 @@
         private System.Windows.Forms.Button btnInsertUser;
         private System.Windows.Forms.TextBox tbUsername;
         private System.Windows.Forms.TextBox tbName;
-        private System.Windows.Forms.ComboBox cbUserType;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbPhone;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbPass;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tbemail;
+        private System.Windows.Forms.Label label5;
     }
 }

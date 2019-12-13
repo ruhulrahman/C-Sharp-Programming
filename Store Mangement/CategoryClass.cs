@@ -11,7 +11,7 @@ namespace Store_Mangement
         private int id;
         private string categoryName;
 
-        public int Id { get => id; set => id = value; }
-        public string CategoryName { get => categoryName; set => categoryName = value; }
+        //public int Id { get => id; set => id = value; }
+        //public string CategoryName { get => categoryName; set => categoryName = value; }
     }
 }
